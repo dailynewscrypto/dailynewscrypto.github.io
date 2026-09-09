@@ -1,9 +1,10 @@
-# Crypto Dispatch
-Crypto news and market-structure analysis for builders and developers.
+# Crypto Market Dispatch
 
-## Coverage
-Liquidity, execution, MEV, stablecoin settlement, derivatives, and protocol incentives.
+> Independent crypto news for active traders, explaining market moves, exchange flows, protocol changes and regulation with sourced, concise reporting.
+
+Coverage: Market Structure, Exchange Flows, Protocol Economics, Stablecoin Markets, Crypto Regulation.
 
 ## Key pages
-- [Homepage](https://dailynewscrypto.github.io/): Latest coverage and analysis.
-- [About](https://dailynewscrypto.github.io/about/): Editorial approach, independence, sourcing, and corrections.
+- [Homepage](https://dailynewscrypto.github.io/): latest reporting and analysis.
+- [About](https://dailynewscrypto.github.io/about/): editorial scope, independence, sourcing and corrections.
+- [Archive](https://dailynewscrypto.github.io/archive/): everything published.
