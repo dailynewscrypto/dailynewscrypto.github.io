@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Automated Market Makers Set Prices</title>
+<meta name="description" content="Automated market makers turn reserve balances and curve formulas into live token prices, shifting slippage and inventory risk directly onto traders.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/how-amm-reserves-and-curves-turn-trades-into-prices/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#111419">
+<meta name="author" content="The Crypto Market Dispatch Editors"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Market Dispatch">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How AMM Reserves and Curves Turn Trades Into Prices">
+<meta property="og:description" content="Automated market makers turn reserve balances and curve formulas into live token prices, shifting slippage and inventory risk directly onto traders.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/how-amm-reserves-and-curves-turn-trades-into-prices/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/how-amm-reserves-and-curves-turn-trades-into-prices-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How AMM Reserves and Curves Turn Trades Into Prices"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How AMM Reserves and Curves Turn Trades Into Prices">
+<meta name="twitter:description" content="Automated market makers turn reserve balances and curve formulas into live token prices, shifting slippage and inventory risk directly onto traders.">
+<meta property="article:published_time" content="2026-09-09T15:16:20+00:00">
+<meta property="article:section" content="Market Structure"><meta property="article:tag" content="Market Structure">
+<meta property="article:tag" content="Protocol Economics">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="/assets/s0368363b40.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Market Dispatch" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/how-amm-reserves-and-curves-turn-trades-into-prices/#webpage",
+      "url": "https://dailynewscrypto.github.io/how-amm-reserves-and-curves-turn-trades-into-prices/",
+      "name": "How Automated Market Makers Set Prices",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/how-amm-reserves-and-curves-turn-trades-into-prices/#article",
+      "headline": "How AMM Reserves and Curves Turn Trades Into Prices",
+      "isAccessibleForFree": true,
+      "description": "Automated market makers turn reserve balances and curve formulas into live token prices, shifting slippage and inventory risk directly onto traders.",
+      "datePublished": "2026-09-09T15:16:20+00:00",
+      "dateModified": "2026-09-09T15:16:20+00:00",
+      "url": "https://dailynewscrypto.github.io/how-amm-reserves-and-curves-turn-trades-into-prices/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/how-amm-reserves-and-curves-turn-trades-into-prices/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://dailynewscrypto.github.io/#org",
+        "name": "The Crypto Market Dispatch Editors"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "keywords": "Market Structure, Protocol Economics",
+      "articleSection": "Market Structure",
+      "wordCount": 602,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/covers/how-amm-reserves-and-curves-turn-trades-into-prices.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How AMM Reserves and Curves Turn Trades Into Prices",
+          "item": "https://dailynewscrypto.github.io/how-amm-reserves-and-curves-turn-trades-into-prices/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Market Dispatch",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Market Dispatch",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Independent crypto news for active traders, explaining market moves, exchange flows, protocol changes and regulation with sourced, concise reporting."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf74384b" href="#main">Skip to the article</a>
+<header class="sfd1c3b9">
+  <div class="s1d55de1">
+    <a class="s5d79b69" href="/">
+      <span class="seb3c904" aria-hidden="true">CD</span>
+      <span class="s8533f72">Crypto Market Dispatch</span>
+    </a>
+    <p class="sf830f45">Crypto markets, flows and the mechanics behind them</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="sbb07bba sd66f365">
+  <header class="s89a21a7">
+<p class="s19c48c7">Market Structure</p>    <h1 class="se5357cc">How AMM Reserves and Curves Turn Trades Into Prices</h1>
+<p class="se912c68">Automated market makers turn reserve balances and curve formulas into live token prices, shifting slippage and inventory risk directly onto traders.</p>    <div class="s943f355 sbc74542">
+      <span>By The Crypto Market Dispatch Editors</span>
+      <time datetime="2026-09-09T15:16:20+00:00">Sep 9, 2026</time>
+<span>3 min read</span>    </div>
+  </header>
+  <figure class="s5a95052">
+    <img class="s9273a7d" src="/assets/covers/how-amm-reserves-and-curves-turn-trades-into-prices.jpg" alt="How AMM Reserves and Curves Turn Trades Into Prices" width="1200" height="630" fetchpriority="high">
+  </figure>
+  <div class="s9016e81 s3d350c2"><p>Automated market makers set prices by applying a fixed mathematical curve to the tokens held in a liquidity pool. Every swap changes those reserve balances, so the quoted price moves immediately: buying one asset removes it from the pool and makes the next unit more expensive, while depositing the other asset pushes its side of the ratio higher. The mechanism replaces a traditional order book and market maker with shared inventory, an on-chain formula and capital supplied by liquidity providers.</p>
+
+<h2>How do AMM reserves determine a token price?</h2>
+<p>In the common constant-product design, the pool tries to keep <strong>x × y = k</strong>, where x and y are the two token reserves and k is their product. Ignoring fees, a pool holding 100 units of token A and 10,000 units of token B implies a marginal price near 100 B per A. A trader cannot buy all 100 A at that rate. As A leaves the reserve, the curve requires progressively more B for each additional A.</p>
+<p>That difference between the starting quote and the trade’s average execution price is price impact. It depends on order size relative to available liquidity, not simply on trading volume or the token’s headline market capitalization. A deeper pool moves less for the same order; a shallow pool can reprice sharply after one swap. This <a href="https://note.com/crypto_explore/n/n57461da43bcf" rel="noopener">Japanese primer on AMM pricing</a> offers another view of how reserve changes translate into quotes.</p>
+
+<h2>Why do AMMs use curves instead of order books?</h2>
+<p>Curves guarantee that a quote is available as long as both reserves remain, while order books require someone to post bids and offers at specific prices. That makes AMMs useful for assets with fragmented or thin liquidity, but the certainty comes at a cost: execution worsens along the curve as trade size grows.</p>
+<ul>
+<li><strong>Constant-product curves</strong> support a broad price range but impose visible slippage on large orders.</li>
+<li><strong>Stable-asset curves</strong> can keep prices tighter near parity, then become steeper as reserves grow unbalanced.</li>
+<li><strong>Weighted pools</strong> use unequal reserve weights, changing both the implied price and inventory exposure.</li>
+<li><strong>Fees</strong> are added to the pool or assigned to providers, compensating capital for taking the other side of flow.</li>
+</ul>
+<p>The curve does not know an asset’s fair value. It only knows its reserves and formula. Arbitrageurs provide the connection to outside markets: when an AMM quote diverges from a larger exchange, they trade against the pool until the reserve ratio again reflects the broader price.</p>
+
+<h2>Who bears the risk when an AMM price moves?</h2>
+<p>Liquidity providers bear the inventory risk, while traders bear slippage and transaction costs. When outside prices change, arbitrageurs tend to buy the underpriced asset from the pool and sell the overpriced one into it. Providers collect fees, but their pool position can underperform simply holding the same tokens because the curve automatically sells the rising asset and accumulates the falling one. That shortfall is commonly called impermanent loss, though it becomes economically real when liquidity is withdrawn.</p>
+
+<h2>What should traders check before using an AMM?</h2>
+<p>Traders should examine pool depth, expected price impact, fees and the route chosen by an aggregator before signing. The displayed spot price is not the execution price for a meaningful order, and splitting a swap across pools can improve the result. The clear verdict is that AMMs do not discover value by themselves; they convert reserve scarcity into a price and rely on arbitrage capital to keep that price aligned with the market. The next concrete signal to watch is reserve imbalance: it shows where liquidity is thinning, where slippage will rise and which providers are absorbing the market’s next move.</p></div>
+  <section class="s7b332bb">
+    <h2 class="s3606f7c">Filed under</h2>
+    <ul class="sfb8f8e0">
+      <li class="s6093f75">Market Structure</li>
+      <li class="s6093f75">Protocol Economics</li>
+    </ul>
+  </section>
+  <section class="s787b21f">
+    <h2 class="s2c9007f">Further reporting</h2>
+    <ul class="s1b05210">
+      <li class="s6559c17"><a href="/what-smart-contracts-do-after-they-go-live/">What Smart Contracts Do After They Go Live</a></li>
+      <li class="s6559c17"><a href="/usdt0-gives-stellar-a-route-to-usdt-not-instant-depth/">USDT0 Gives Stellar a Route to USDT, Not Instant Depth</a></li>
+      <li class="s6559c17"><a href="/an-address-balance-is-a-snapshot-not-a-portfolio/">An Address Balance Is a Snapshot, Not a Portfolio</a></li>
+      <li class="s6559c17"><a href="/visa-stablecoin-settlement-run-rate-tops-20-billion/">Visa Stablecoin Settlement Run Rate Tops $20 Billion</a></li>
+    </ul>
+  </section>
+</article>
+</main>
+
+<footer class="s1c3779d">
+  <div class="s5f555fa">
+    <div class="s122ee97">
+      <a class="sd04d715" href="/">Crypto Market Dispatch</a>
+      <nav class="s7069317" aria-label="Publication">
+        <ul class="se5c94db">
+          <li class="sfdf8438"><a href="/">Start</a></li>
+          <li class="sfdf8438"><a href="/archive/">Index</a></li>
+          <li class="sfdf8438"><a href="/about/">About us</a></li>
+          <li class="sfdf8438"><a href="/privacy/">Privacy</a></li>
+        </ul>
+      </nav>
+    </div>
+    <nav class="s84d36c7" aria-label="Coverage">
+      <h2 class="s3606f7c">Coverage</h2>
+      <ul class="se5c94db">
+        <li class="sfdf8438"><a href="/topics/market-structure/">Market Structure</a></li>
+        <li class="sfdf8438"><a href="/topics/exchange-flows/">Exchange Flows</a></li>
+        <li class="sfdf8438"><a href="/topics/protocol-economics/">Protocol Economics</a></li>
+        <li class="sfdf8438"><a href="/topics/stablecoin-markets/">Stablecoin Markets</a></li>
+        <li class="sfdf8438"><a href="/topics/crypto-regulation/">Crypto Regulation</a></li>
+      </ul>
+    </nav>
+    <div class="s4507838">
+      <p class="s0258d90">Independent publication. Not financial advice.</p>
+      <p class="s45aa3b1">© 2026 Crypto Market Dispatch</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
