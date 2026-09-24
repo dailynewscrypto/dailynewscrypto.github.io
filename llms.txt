@@ -1,6 +1,6 @@
-# Web3 News
+# Crypto Daybook
 
-> Crypto news on markets, exchanges, blockchains, regulation, stablecoins, DeFi and security incidents, reported across projects and networks every day.
+> Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents.
 
 ## Key pages
 - [Homepage](https://dailynewscrypto.github.io/): latest reporting and analysis.
