@@ -1,6 +1,6 @@
 # Web3 News
 
-> Web3 News reports on crypto projects, markets, regulation and security in plain English, defining every term so newcomers can follow each story.
+> Crypto news on markets, exchanges, blockchains, regulation, stablecoins, DeFi and security incidents, reported across projects and networks every day.
 
 ## Key pages
 - [Homepage](https://dailynewscrypto.github.io/): latest reporting and analysis.
