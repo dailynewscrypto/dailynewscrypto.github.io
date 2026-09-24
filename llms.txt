@@ -1,8 +1,6 @@
-# Crypto Market Dispatch
+# Web3 News
 
-> Independent crypto news for active traders, explaining market moves, exchange flows, protocol changes and regulation with sourced, concise reporting.
-
-Coverage: Market Structure, Exchange Flows, Protocol Economics, Stablecoin Markets, Crypto Regulation.
+> Web3 News reports on crypto projects, markets, regulation and security in plain English, defining every term so newcomers can follow each story.
 
 ## Key pages
 - [Homepage](https://dailynewscrypto.github.io/): latest reporting and analysis.
