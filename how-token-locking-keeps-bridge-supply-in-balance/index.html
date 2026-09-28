@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Locking in Crypto Bridges: How Supply Stays Balanced</title>
+<meta name="description" content="A bridge locks tokens on one chain before issuing a matching amount on another, then reverses the steps on return to keep supply accounted for across both networks.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/how-token-locking-keeps-bridge-supply-in-balance/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How Token Locking Keeps Bridge Supply in Balance">
+<meta property="og:description" content="A bridge locks tokens on one chain before issuing a matching amount on another, then reverses the steps on return to keep supply accounted for across both networks.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/how-token-locking-keeps-bridge-supply-in-balance/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/how-token-locking-keeps-bridge-supply-in-balance-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How Token Locking Keeps Bridge Supply in Balance"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Token Locking Keeps Bridge Supply in Balance">
+<meta name="twitter:description" content="A bridge locks tokens on one chain before issuing a matching amount on another, then reverses the steps on return to keep supply accounted for across both networks.">
+<meta property="article:published_time" content="2026-09-28T14:55:15+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/how-token-locking-keeps-bridge-supply-in-balance/#webpage",
+      "url": "https://dailynewscrypto.github.io/how-token-locking-keeps-bridge-supply-in-balance/",
+      "name": "Token Locking in Crypto Bridges: How Supply Stays Balanced",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/how-token-locking-keeps-bridge-supply-in-balance/#article",
+      "headline": "How Token Locking Keeps Bridge Supply in Balance",
+      "isAccessibleForFree": true,
+      "description": "A bridge locks tokens on one chain before issuing a matching amount on another, then reverses the steps on return to keep supply accounted for across both networks.",
+      "datePublished": "2026-09-28T14:55:15+00:00",
+      "dateModified": "2026-09-28T14:55:15+00:00",
+      "url": "https://dailynewscrypto.github.io/how-token-locking-keeps-bridge-supply-in-balance/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/how-token-locking-keeps-bridge-supply-in-balance/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 569,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/covers/how-token-locking-keeps-bridge-supply-in-balance.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How Token Locking Keeps Bridge Supply in Balance",
+          "item": "https://dailynewscrypto.github.io/how-token-locking-keeps-bridge-supply-in-balance/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">How Token Locking Keeps Bridge Supply in Balance</h1>
+<p class="s606161b">A bridge locks tokens on one chain before issuing a matching amount on another, then reverses the steps on return to keep supply accounted for across both networks.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-09-28T14:55:15+00:00">Sep 28, 2026</time><span>3 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/how-token-locking-keeps-bridge-supply-in-balance.jpg" alt="" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>Token locking keeps a bridge’s supply in balance by holding tokens on one network while an equal amount is issued on another. The lock makes the original tokens unavailable to spend, so the new tokens have backing. When a user returns, the bridge removes the new tokens and releases the original ones.</p>
+
+<h2>How does a bridge lock and issue tokens?</h2>
+
+<p>A lock-and-mint bridge starts when a user sends tokens to a bridge contract on the source chain. A contract is software that runs on a blockchain. The bridge holds those tokens, then issues an equivalent amount on the destination chain. That new token is often called a wrapped token: a representation of an asset that remains held elsewhere.</p>
+
+<p>The bridge needs to confirm the source-chain transaction before it issues tokens on the destination chain. This link between the two actions keeps the bridge from issuing tokens based on a transfer that did not happen. For the details of how assets move between Ethereum and Polygon, see <a href="https://newscryptoworld.github.io/polygon-bridge-how-tokens-move-between-ethereum-and-polygon/" rel="noopener">Polygon Bridge</a>.</p>
+
+<p>For example, if a user locks 10 tokens on one chain, the bridge can issue 10 matching tokens on another. The user can then use those tokens on the destination chain. The locked originals stay put until a valid return transfer is made. The bridge’s accounting must track both sides: what it holds and what it has issued.</p>
+
+<h2>What happens when tokens move back?</h2>
+
+<p>On the return trip, the bridge burns or otherwise removes the destination-chain tokens, then releases the corresponding locked tokens on the source chain. Burning means permanently removing tokens from circulation. Removing the destination tokens first prevents the same value from remaining spendable in both places after the original tokens are released.</p>
+
+<p>In a simplified lock-and-mint model, the accounting looks like this:</p>
+
+<ul>
+<li>The source-chain tokens are deposited and held by the bridge.</li>
+<li>An equal amount is issued on the destination chain.</li>
+<li>The user sends the destination tokens back to the bridge.</li>
+<li>The bridge removes those tokens and releases the original deposit.</li>
+</ul>
+
+<p>Fees, different token units, or bridge-specific rules can affect the exact amounts a user receives. The core check is that the bridge should not release more than it holds or issue more than its rules allow. Users should check the token and network shown for both the deposit and return. The same asset name can refer to different tokens on different chains.</p>
+
+<h2>Does locking prevent every supply problem?</h2>
+
+<p>No. Locking gives the bridge a way to match issued tokens to held assets, but it does not guarantee that the bridge will work as intended. The contracts must correctly verify deposits, manage issuance, and authorize releases. A bug or compromised bridge controls can break that accounting and put the backing at risk.</p>
+
+<p>Lock-and-mint is also only one bridge design. Some systems burn tokens on the source chain and issue them on the destination, relying on the token’s rules to support both actions. Others use liquidity pools, where users receive tokens already held on the destination chain. Those models handle supply differently, so the word “bridge” alone does not tell you what backs a token.</p>
+
+<p>For most users, the practical check is to confirm the bridge’s model and the destination token before sending funds. A wrapped token backed by locked assets depends on that bridge continuing to hold and release the assets correctly. Locking keeps the amounts connected; the bridge’s contracts and controls determine whether that connection holds.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/polygon-bridge-moves-tokens-between-ethereum-and-polygon-pos/">Polygon Bridge moves tokens between Ethereum and Polygon PoS</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/arbswap-explained-swaps-liquidity-and-farming/">Arbswap explained: swaps, liquidity and farming</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/why-a-token-chart-can-have-gaps-in-its-history/">Why a token chart can have gaps in its history</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/solana-begins-public-test-of-alpenglow-finality-upgrade/">Solana begins public test of Alpenglow finality upgrade</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent publication. Not financial advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
