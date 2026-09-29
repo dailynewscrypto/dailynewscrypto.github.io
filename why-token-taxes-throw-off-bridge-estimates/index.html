@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Taxes and Bridge Estimates: What Changes</title>
+<meta name="description" content="A token tax can shrink the amount a bridge receives or make a transfer fail, while gas estimates measure execution; check both figures before sending.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/why-token-taxes-throw-off-bridge-estimates/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why Token Taxes Throw Off Bridge Estimates">
+<meta property="og:description" content="A token tax can shrink the amount a bridge receives or make a transfer fail, while gas estimates measure execution; check both figures before sending.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/why-token-taxes-throw-off-bridge-estimates/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/why-token-taxes-throw-off-bridge-estimates-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why Token Taxes Throw Off Bridge Estimates"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Token Taxes Throw Off Bridge Estimates">
+<meta name="twitter:description" content="A token tax can shrink the amount a bridge receives or make a transfer fail, while gas estimates measure execution; check both figures before sending.">
+<meta property="article:published_time" content="2026-09-29T16:53:08+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/why-token-taxes-throw-off-bridge-estimates/#webpage",
+      "url": "https://dailynewscrypto.github.io/why-token-taxes-throw-off-bridge-estimates/",
+      "name": "Token Taxes and Bridge Estimates: What Changes",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/why-token-taxes-throw-off-bridge-estimates/#article",
+      "headline": "Why Token Taxes Throw Off Bridge Estimates",
+      "isAccessibleForFree": true,
+      "description": "A token tax can shrink the amount a bridge receives or make a transfer fail, while gas estimates measure execution; check both figures before sending.",
+      "datePublished": "2026-09-29T16:53:08+00:00",
+      "dateModified": "2026-09-29T16:53:08+00:00",
+      "url": "https://dailynewscrypto.github.io/why-token-taxes-throw-off-bridge-estimates/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/why-token-taxes-throw-off-bridge-estimates/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 620,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/covers/why-token-taxes-throw-off-bridge-estimates.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Token Taxes Throw Off Bridge Estimates",
+          "item": "https://dailynewscrypto.github.io/why-token-taxes-throw-off-bridge-estimates/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">Why Token Taxes Throw Off Bridge Estimates</h1>
+<p class="s606161b">A token tax can shrink the amount a bridge receives or make a transfer fail, while gas estimates measure execution; check both figures before sending.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-09-29T16:53:08+00:00">Sep 29, 2026</time><span>3 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/why-token-taxes-throw-off-bridge-estimates.jpg" alt="" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>Token taxes can make a bridge estimate misleading because the amount sent may not be the amount the bridge receives. A token tax, also called a fee on transfer, is a charge built into a token’s transfer rules. It can reduce the amount that reaches a bridge contract or a wallet on the destination chain. That changes the value of the route, and in some cases the transfer may fail.</p>
+
+<p>A bridge quote can include several pieces: the source-chain gas needed to start the transfer, any bridge fee, and the expected amount arriving on the destination chain. Gas is the network cost of running a transaction. It is separate from a token tax, which is usually taken in tokens. For a closer look at how source-chain gas fits into an estimate, see <a href="https://cryptoposts.github.io/bungee-bridge-estimate-source-chain-gas-before-you-send/" rel="noopener">bungee bridge</a>. The two costs can affect the same transfer, but they describe different things.</p>
+
+<h2>How does a token tax change a bridge estimate?</h2>
+
+<p>A token tax changes the amount available to bridge if it is taken when tokens move into the bridge contract. Say a quote starts from the amount in your wallet. If the token takes a cut on that transfer, the bridge may receive less than the quote assumes. The destination amount can then be lower, or the route may not work at all.</p>
+
+<p>The tax can also apply on the destination side, when bridged tokens are sent to your wallet. In that case, the bridge’s quoted amount may describe what its contract sends, not what your wallet finally receives. Token rules differ: some charge on every transfer, while others apply different charges to buys, sells or transfers. A displayed percentage alone may not tell you which step will trigger it.</p>
+
+<h2>Why can the gas estimate be wrong too?</h2>
+
+<p>Gas estimates predict the work a transaction will do on the source network. A token with extra transfer rules may require different contract execution from a standard token. If the estimator or route builder does not account for those rules, its gas figure may be inaccurate or its simulation may fail. The tax itself does not automatically raise the network’s gas price; it can change the transaction being estimated.</p>
+
+<p>There is another possible mismatch: a quote can be based on a successful transfer, while the actual token contract rejects the bridge’s transfer method or takes a fee the bridge cannot handle. A failed transaction can still use gas. Some routes may exclude tokens with transfer fees, and a quote that appears for a token does not guarantee every transfer path will support its rules.</p>
+
+<h2>What should you check before sending?</h2>
+
+<p>For most readers, the better choice is to treat a quote as an estimate of a particular route, not a promise about the amount that will land. Check the token’s transfer behavior and compare the quoted amount with the amount you expect to receive. If the token has a tax, look for whether it applies on the source transfer, the destination transfer, or both.</p>
+
+<ul>
+<li>Check the token contract address. Similar names can refer to different tokens with different rules.</li>
+<li>Look for a fee-on-transfer warning or a stated tax, and confirm which transfer types trigger it.</li>
+<li>Review whether the quote shows the amount sent, the amount the bridge receives, or the expected amount in your wallet.</li>
+<li>Make sure the route supports the token’s transfer behavior before approving or submitting the transaction.</li>
+</ul>
+
+<p>The practical distinction is simple: the token tax affects how many tokens move, while gas pays for the computation that moves them. A useful bridge estimate needs to account for both. If the route does not explain how a transfer fee affects the received amount, do not assume the headline quote is your final balance.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/which-bungee-bridge-route-gets-your-app-the-token-it-needs/">Which Bungee bridge route gets your app the token it needs?</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/why-your-first-wallet-swap-takes-two-transactions/">Why Your First Wallet Swap Takes Two Transactions</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/pool-activity-and-on-chain-counts-measure-different-things/">Pool activity and on-chain counts measure different things</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/what-wrong-network-recovery-can-and-cannot-do/">What Wrong-Network Recovery Can—and Cannot—Do</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent publication. Not financial advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
