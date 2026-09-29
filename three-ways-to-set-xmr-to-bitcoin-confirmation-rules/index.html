@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XMR-to-Bitcoin Confirmation Policies Explained</title>
+<meta name="description" content="XMR-to-Bitcoin swaps can settle after a first block, a fixed wait, or a value-based threshold, each trading payout speed against the risk of a chain reversal.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/three-ways-to-set-xmr-to-bitcoin-confirmation-rules/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Three ways to set XMR-to-Bitcoin confirmation rules">
+<meta property="og:description" content="XMR-to-Bitcoin swaps can settle after a first block, a fixed wait, or a value-based threshold, each trading payout speed against the risk of a chain reversal.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/three-ways-to-set-xmr-to-bitcoin-confirmation-rules/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/three-ways-to-set-xmr-to-bitcoin-confirmation-rules-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Three ways to set XMR-to-Bitcoin confirmation rules"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Three ways to set XMR-to-Bitcoin confirmation rules">
+<meta name="twitter:description" content="XMR-to-Bitcoin swaps can settle after a first block, a fixed wait, or a value-based threshold, each trading payout speed against the risk of a chain reversal.">
+<meta property="article:published_time" content="2026-09-29T13:45:51+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/three-ways-to-set-xmr-to-bitcoin-confirmation-rules/#webpage",
+      "url": "https://dailynewscrypto.github.io/three-ways-to-set-xmr-to-bitcoin-confirmation-rules/",
+      "name": "XMR-to-Bitcoin Confirmation Policies Explained",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/three-ways-to-set-xmr-to-bitcoin-confirmation-rules/#article",
+      "headline": "Three ways to set XMR-to-Bitcoin confirmation rules",
+      "isAccessibleForFree": true,
+      "description": "XMR-to-Bitcoin swaps can settle after a first block, a fixed wait, or a value-based threshold, each trading payout speed against the risk of a chain reversal.",
+      "datePublished": "2026-09-29T13:45:51+00:00",
+      "dateModified": "2026-09-29T13:45:51+00:00",
+      "url": "https://dailynewscrypto.github.io/three-ways-to-set-xmr-to-bitcoin-confirmation-rules/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/three-ways-to-set-xmr-to-bitcoin-confirmation-rules/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 615,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/covers/three-ways-to-set-xmr-to-bitcoin-confirmation-rules.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Three ways to set XMR-to-Bitcoin confirmation rules",
+          "item": "https://dailynewscrypto.github.io/three-ways-to-set-xmr-to-bitcoin-confirmation-rules/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">Three ways to set XMR-to-Bitcoin confirmation rules</h1>
+<p class="s606161b">XMR-to-Bitcoin swaps can settle after a first block, a fixed wait, or a value-based threshold, each trading payout speed against the risk of a chain reversal.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-09-29T13:45:51+00:00">Sep 29, 2026</time><span>3 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/three-ways-to-set-xmr-to-bitcoin-confirmation-rules.jpg" alt="" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>An XMR-to-Bitcoin swap can release its payout after one block, after a set number of confirmations, or after a threshold tied to the amount at risk. A confirmation means a transaction has been included in a block; later blocks make it harder to reverse. The rule matters because the swap has two separate legs: the XMR deposit and the BTC payout. A fast rule gets funds moving sooner, while a longer wait gives the operator more time to see whether either chain’s history changes.</p>
+
+<h2>What does a confirmation policy control?</h2>
+
+<p>A confirmation policy sets when a swap service treats a payment as settled enough to act on. On the XMR side, the service checks that the deposit is included in a Monero block and watches its confirmations. On the Bitcoin side, the recipient can make a separate choice about when to treat the payout as final enough to spend. These are not one shared counter: each blockchain adds confirmations to its own transaction.</p>
+
+<p>The route also affects who sets the rule. A hosted swap service may decide when it sends BTC after seeing an XMR deposit. In a wallet-to-wallet route, the software and swap protocol define the sequence and what happens if a party stops cooperating. The fuller guide to choosing an <a href="https://dailycryptonews.github.io/xmr-bridge-routes-choosing-a-path-from-your-own-wallet/" rel="noopener">xmr bridge</a> route covers those mechanics; here, the focus is the waiting rule.</p>
+
+<h2>Is release after the first block a good choice?</h2>
+
+<p>First-block release is the fastest policy, but it accepts more risk than waiting for additional blocks. The first confirmation shows that miners included the transaction. A later chain reorganization, where blocks are replaced by a competing history, can still affect a recent payment. This option may suit small amounts when speed matters and the user accepts the extra risk.</p>
+
+<p>Zero-confirmation release goes further: the service acts when a transaction is broadcast but before it is included in a block. That can be quick, but a broadcast transaction is not yet confirmed on-chain. For most readers, first-block release is a more sensible speed-focused floor than acting on an unconfirmed deposit.</p>
+
+<h2>When does a fixed confirmation wait make sense?</h2>
+
+<p>A fixed wait requires the deposit to gain a chosen number of confirmations before the swap proceeds. It is easy to explain and apply to every trade. Waiting for more blocks reduces exposure to a recent chain change, but it adds time on both sides if the recipient also waits to spend the BTC.</p>
+
+<p>The trade-off is that one fixed number treats a small swap and a large one alike. It may hold up a low-value transfer longer than needed, while offering less protection than desired for a high-value payment. Also, a confirmation count does not promise a specific completion time: block production and transaction fees affect when a payment gets included.</p>
+
+<h2>Why use a value-based threshold?</h2>
+
+<p>A value-based policy raises the required wait as the amount at risk grows. It keeps small swaps moving while asking larger ones to build a deeper confirmation history. That is usually the most practical approach for a service with varied trade sizes, provided it explains the thresholds clearly.</p>
+
+<ul>
+<li>For a small amount, consider whether the speed of first-block release is worth its added reversal risk.</li>
+<li>For a routine amount, check the service’s XMR deposit rule and the recipient’s BTC spending rule separately.</li>
+<li>For a large amount, favor a longer wait and verify that the swap has a clear timeout or refund path.</li>
+</ul>
+
+<p>Before sending, check how the route handles a delayed deposit, a changing confirmation count, and a swap that does not complete. The useful question is not simply how many blocks it waits, but which transaction the rule applies to and what happens if settlement stalls.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/monero-swap-pending-check-these-details-before-retrying/">Monero swap pending? Check these details before retrying</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/how-token-locking-keeps-bridge-supply-in-balance/">How Token Locking Keeps Bridge Supply in Balance</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/polygon-bridge-moves-tokens-between-ethereum-and-polygon-pos/">Polygon Bridge moves tokens between Ethereum and Polygon PoS</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/arbswap-explained-swaps-liquidity-and-farming/">Arbswap explained: swaps, liquidity and farming</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent publication. Not financial advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
