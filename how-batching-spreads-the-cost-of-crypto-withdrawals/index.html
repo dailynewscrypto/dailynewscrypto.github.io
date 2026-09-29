@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Batching withdrawals and rollup proof costs | Crypto Daybook</title>
+<meta name="description" content="Rollups can prove many withdrawals in one batch, spreading fixed verification costs across users, but each exit still has its own data, claim steps and wait.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/how-batching-spreads-the-cost-of-crypto-withdrawals/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How batching spreads the cost of crypto withdrawals">
+<meta property="og:description" content="Rollups can prove many withdrawals in one batch, spreading fixed verification costs across users, but each exit still has its own data, claim steps and wait.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/how-batching-spreads-the-cost-of-crypto-withdrawals/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/how-batching-spreads-the-cost-of-crypto-withdrawals-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How batching spreads the cost of crypto withdrawals"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How batching spreads the cost of crypto withdrawals">
+<meta name="twitter:description" content="Rollups can prove many withdrawals in one batch, spreading fixed verification costs across users, but each exit still has its own data, claim steps and wait.">
+<meta property="article:published_time" content="2026-09-29T20:29:21+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/how-batching-spreads-the-cost-of-crypto-withdrawals/#webpage",
+      "url": "https://dailynewscrypto.github.io/how-batching-spreads-the-cost-of-crypto-withdrawals/",
+      "name": "Batching withdrawals and rollup proof costs | Crypto Daybook",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/how-batching-spreads-the-cost-of-crypto-withdrawals/#article",
+      "headline": "How batching spreads the cost of crypto withdrawals",
+      "isAccessibleForFree": true,
+      "description": "Rollups can prove many withdrawals in one batch, spreading fixed verification costs across users, but each exit still has its own data, claim steps and wait.",
+      "datePublished": "2026-09-29T20:29:21+00:00",
+      "dateModified": "2026-09-29T20:29:21+00:00",
+      "url": "https://dailynewscrypto.github.io/how-batching-spreads-the-cost-of-crypto-withdrawals/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/how-batching-spreads-the-cost-of-crypto-withdrawals/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 543,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/covers/how-batching-spreads-the-cost-of-crypto-withdrawals.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How batching spreads the cost of crypto withdrawals",
+          "item": "https://dailynewscrypto.github.io/how-batching-spreads-the-cost-of-crypto-withdrawals/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">How batching spreads the cost of crypto withdrawals</h1>
+<p class="s606161b">Rollups can prove many withdrawals in one batch, spreading fixed verification costs across users, but each exit still has its own data, claim steps and wait.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-09-29T20:29:21+00:00">Sep 29, 2026</time><span>2 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/how-batching-spreads-the-cost-of-crypto-withdrawals.jpg" alt="" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>Rollups can bundle many withdrawal requests into one batch and use a single proof to show the batch’s state changes are valid. That spreads some costs across users, though it does not turn many exits into one user action or erase the data each withdrawal needs.</p>
+
+<h2>How does batching lower withdrawal proof costs?</h2>
+
+<p>A validity proof is a cryptographic check that a set of transactions followed the rollup’s rules. Instead of asking Ethereum to check every transaction on its own, a rollup operator processes transactions offchain, then submits a batch and proof for Ethereum to verify. The fixed cost of submitting and verifying that proof is shared across the batch.</p>
+
+<p>For a withdrawal, the batch can establish that the user’s exit request was included and that the rollup’s updated state is valid. A Merkle proof, a short cryptographic path to a batch record, can show that a particular request belongs to the batch. For a bridge-specific account of the exit path, see <a href="https://ameblo.jp/pollkoss34/entry-12980173044.html" rel="noopener">Mantle Bridge</a>. The same broad idea applies to other rollups, though their bridge steps differ.</p>
+
+<p>More requests in a batch can lower the average share of proof verification and submission costs per request. But proof generation still takes computing work, and larger or more complex batches can take more work to prove. Batch size alone does not tell you what a user will pay.</p>
+
+<h2>What costs remain for each withdrawal?</h2>
+
+<p>Each withdrawal still adds data to the batch, and that data has to be published or otherwise made available under the rollup’s design. Rollups can compress transaction data, which helps, but more requests generally mean more data. Ethereum fees also change with network demand, so the cost of publishing or settling a batch is not fixed.</p>
+
+<p>Users may also need to send a separate transaction to claim funds on the destination chain. That transaction has its own network fee. Some rollups charge operator fees on the layer 2 as well. So batching can reduce the share of common proof and settlement costs, while the user’s own transaction and claim fees remain tied to their withdrawal.</p>
+
+<p>It helps to separate three parts of the bill:</p>
+
+<ul>
+<li><strong>Batch costs:</strong> proof verification and submission, spread across requests.</li>
+<li><strong>Data costs:</strong> the space needed to publish batch information.</li>
+<li><strong>User costs:</strong> the withdrawal transaction and any destination-chain claim.</li>
+</ul>
+
+<h2>Does batching make withdrawals faster?</h2>
+
+<p>Not by itself. A rollup may wait to collect enough transactions to make a batch economical, which can delay submission. After the batch is submitted, a validity proof must be generated and accepted on Ethereum before some bridges let users claim their funds. The proof can cover many requests at once, but that does not guarantee each request is ready immediately.</p>
+
+<p>There is a trade-off: frequent, smaller batches can mean less time waiting to be included, while larger batches can spread fixed costs among more users. Operators choose how to balance those aims, and the result depends on the rollup’s design and activity.</p>
+
+<p>For a user moving funds, compare the full route: the layer 2 withdrawal fee, the expected wait for proof and settlement, and the destination-chain claim fee. Batching is most useful for reducing shared costs at the rollup level. It does not make a cross-chain withdrawal free, instant or identical across networks.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/why-mantle-withdrawals-stay-pending/">Why Mantle Withdrawals Stay Pending</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/check-a-bridged-tokens-contract-before-you-send/">Check a Bridged Token’s Contract Before You Send</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/how-to-check-an-ethereum-to-manta-transfer/">How to Check an Ethereum-to-Manta Transfer</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/manta-bridge-fees-what-deposits-and-withdrawals-cost/">Manta bridge fees: what deposits and withdrawals cost</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent publication. Not financial advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
