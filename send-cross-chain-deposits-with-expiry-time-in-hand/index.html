@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to time a cross-chain deposit before expiry</title>
+<meta name="description" content="Send a cross-chain deposit only after checking the route, fee and expiry, then leave enough time for the source chain to confirm it before the channel closes.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/send-cross-chain-deposits-with-expiry-time-in-hand/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Send cross-chain deposits with expiry time in hand">
+<meta property="og:description" content="Send a cross-chain deposit only after checking the route, fee and expiry, then leave enough time for the source chain to confirm it before the channel closes.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/send-cross-chain-deposits-with-expiry-time-in-hand/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/send-cross-chain-deposits-with-expiry-time-in-hand-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Send cross-chain deposits with expiry time in hand"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Send cross-chain deposits with expiry time in hand">
+<meta name="twitter:description" content="Send a cross-chain deposit only after checking the route, fee and expiry, then leave enough time for the source chain to confirm it before the channel closes.">
+<meta property="article:published_time" content="2026-09-30T15:23:58+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/send-cross-chain-deposits-with-expiry-time-in-hand/#webpage",
+      "url": "https://dailynewscrypto.github.io/send-cross-chain-deposits-with-expiry-time-in-hand/",
+      "name": "How to time a cross-chain deposit before expiry",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/send-cross-chain-deposits-with-expiry-time-in-hand/#article",
+      "headline": "Send cross-chain deposits with expiry time in hand",
+      "isAccessibleForFree": true,
+      "description": "Send a cross-chain deposit only after checking the route, fee and expiry, then leave enough time for the source chain to confirm it before the channel closes.",
+      "datePublished": "2026-09-30T15:23:58+00:00",
+      "dateModified": "2026-09-30T15:23:58+00:00",
+      "url": "https://dailynewscrypto.github.io/send-cross-chain-deposits-with-expiry-time-in-hand/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/send-cross-chain-deposits-with-expiry-time-in-hand/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 576,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/covers/send-cross-chain-deposits-with-expiry-time-in-hand.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Send cross-chain deposits with expiry time in hand",
+          "item": "https://dailynewscrypto.github.io/send-cross-chain-deposits-with-expiry-time-in-hand/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">Send cross-chain deposits with expiry time in hand</h1>
+<p class="s606161b">Send a cross-chain deposit only after checking the route, fee and expiry, then leave enough time for the source chain to confirm it before the channel closes.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-09-30T15:23:58+00:00">Sep 30, 2026</time><span>3 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/send-cross-chain-deposits-with-expiry-time-in-hand.jpg" alt="" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>To time a cross-chain deposit before expiry, check the route’s closing time, then send early enough for the source-chain transaction to be seen and confirmed. A deposit address can stop accepting new transfers even while a transaction is waiting in a wallet or mempool, the queue of unconfirmed transactions. Expiry rules differ by service, so use the time or block height shown for that specific deposit.</p>
+
+<h2>When should I send a cross-chain deposit?</h2>
+<p>Send once the route details are final and you have enough time left for the source chain to process the transaction. Don’t treat the address’s expiry as a target send time: a wallet may broadcast quickly, but the network still needs to include the transaction in a block, and the swap service may require further confirmations.</p>
+<p>Check the source chain’s recent pace, especially if it is busy. A fast chain can still slow down, and a fee set too low may leave a transaction waiting. The fuller <a href="https://elijahsjsb511399.bloggazzo.com/41846445/chainflip-native-cross-chain-swaps-for-integrators" rel="noopener">chainflip</a> article explains how the deposit step fits into a native cross-chain swap flow. Keep the deposit amount, source asset and destination address beside you while reviewing the route; correcting those details after sending may be difficult or impossible.</p>
+
+<h2>What does a deposit expiry actually mean?</h2>
+<p>Expiry marks the end of the period in which a service expects a deposit for that route. Some services show a clock time, while others show a block height, the number assigned to a block on the source chain. A block-height deadline moves with that chain’s block production, so it is not always possible to convert it into an exact wall-clock time.</p>
+<p>Expiry does not mean the swap itself has a countdown that can be extended. The route may be tied to a particular deposit address and set of instructions. A transfer sent after the channel closes may not be recognised automatically, even if the address still looks usable. Follow the service’s stated rule for whether a transaction must be broadcast, included in a block or confirmed before the deadline.</p>
+
+<h2>How much time should I leave for confirmation?</h2>
+<p>Work backwards from the displayed deadline and leave a buffer for both inclusion and the required confirmations. The right buffer depends on the source chain, current congestion and the service’s confirmation policy; there is no safe number of minutes that fits every deposit.</p>
+<ul>
+<li>Read the expiry in the route details before opening your wallet.</li>
+<li>Check the source chain and asset match the instructions exactly.</li>
+<li>Use a fee likely to get the transaction included in time.</li>
+<li>Leave room for the service to observe the required confirmations.</li>
+</ul>
+<p>If there is too little time to leave that buffer, open a fresh route if the service allows it and use its new instructions. Don’t send to an old address just because it remains visible in your history.</p>
+
+<h2>What should I do after sending?</h2>
+<p>Save the transaction ID and watch its status on the source chain and in the swap service. A wallet’s “sent” message means it broadcast the transaction; it does not prove the service has received or accepted the deposit. If the transaction is still pending near expiry, avoid sending a second deposit unless the service tells you what to do. Two transfers can create two separate cases to resolve.</p>
+<p>The practical rule is simple: prepare first, then send with time to spare. If the deadline is close or unclear, a new route is usually easier to track than trying to race an expiring one.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/how-swap-proceeds-can-pay-for-a-contract-call/">How Swap Proceeds Can Pay for a Contract Call</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/check-a-cross-chain-swap-before-you-send/">Check a Cross-Chain Swap Before You Send</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/how-to-size-recurring-solana-treasury-swaps/">How to size recurring Solana treasury swaps</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/why-a-cross-chain-refund-can-take-hours/">Why a cross-chain refund can take hours</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent publication. Not financial advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
