@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monero bridge confirmations and wrapped token timing</title>
+<meta name="description" content="Monero bridge timing depends on source-chain confirmations, bridge checks and destination-chain minting; learn which status to check before retrying an XMR transfer.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/why-monero-bridge-transfers-take-more-than-one-confirmation/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why Monero Bridge Transfers Take More Than One Confirmation">
+<meta property="og:description" content="Monero bridge timing depends on source-chain confirmations, bridge checks and destination-chain minting; learn which status to check before retrying an XMR transfer.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/why-monero-bridge-transfers-take-more-than-one-confirmation/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/why-monero-bridge-transfers-take-more-than-one-confirmation-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why Monero Bridge Transfers Take More Than One Confirmation"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Monero Bridge Transfers Take More Than One Confirmation">
+<meta name="twitter:description" content="Monero bridge timing depends on source-chain confirmations, bridge checks and destination-chain minting; learn which status to check before retrying an XMR transfer.">
+<meta property="article:published_time" content="2026-09-30T09:41:48+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/why-monero-bridge-transfers-take-more-than-one-confirmation/#webpage",
+      "url": "https://dailynewscrypto.github.io/why-monero-bridge-transfers-take-more-than-one-confirmation/",
+      "name": "Monero bridge confirmations and wrapped token timing",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/why-monero-bridge-transfers-take-more-than-one-confirmation/#article",
+      "headline": "Why Monero Bridge Transfers Take More Than One Confirmation",
+      "isAccessibleForFree": true,
+      "description": "Monero bridge timing depends on source-chain confirmations, bridge checks and destination-chain minting; learn which status to check before retrying an XMR transfer.",
+      "datePublished": "2026-09-30T09:41:48+00:00",
+      "dateModified": "2026-09-30T09:41:48+00:00",
+      "url": "https://dailynewscrypto.github.io/why-monero-bridge-transfers-take-more-than-one-confirmation/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/why-monero-bridge-transfers-take-more-than-one-confirmation/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 520,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/covers/why-monero-bridge-transfers-take-more-than-one-confirmation.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Monero Bridge Transfers Take More Than One Confirmation",
+          "item": "https://dailynewscrypto.github.io/why-monero-bridge-transfers-take-more-than-one-confirmation/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">Why Monero Bridge Transfers Take More Than One Confirmation</h1>
+<p class="s606161b">Monero bridge timing depends on source-chain confirmations, bridge checks and destination-chain minting; learn which status to check before retrying an XMR transfer.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-09-30T09:41:48+00:00">Sep 30, 2026</time><span>2 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/why-monero-bridge-transfers-take-more-than-one-confirmation.jpg" alt="" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>A wrapped XMR transfer completes only after a bridge accepts the Monero deposit and issues a token on another chain. Those are separate steps, so a confirmed deposit does not always mean the wrapped token is ready to use.</p>
+
+<p>Monero blocks arrive about every two minutes on average, but that is not a timer for a bridge payout. Each bridge sets its own confirmation threshold and may need extra time to verify the deposit, pass information between chains and submit the mint transaction. If your transfer has stalled, follow the <a href="https://newscryptoworld.github.io/how-to-use-zerofi-when-an-xmr-transfer-stalls/" rel="noopener">ZeroFi steps for a stalled XMR transfer</a> for help diagnosing that specific issue.</p>
+
+<h2>What does a confirmation mean for an XMR deposit?</h2>
+
+<p>A confirmation means Monero miners have included the transaction in a block. Before that, a wallet may show the payment as pending because it has reached the network but is not yet in the blockchain.</p>
+
+<p>Bridges usually wait for more than a transaction to appear. They set a number of confirmations to reduce the chance that a later chain change removes the deposit. The required count depends on the bridge’s own risk rules. Monero’s rule for when funds become spendable is a separate matter: it does not set the bridge’s deposit threshold.</p>
+
+<p>That difference explains why a wallet can show a confirmed payment while the bridge still reports “waiting.” The deposit may be on-chain, but the bridge has not yet reached its required depth or completed its own checks.</p>
+
+<h2>Why can the wrapped token arrive later?</h2>
+
+<p>After the bridge accepts the XMR deposit, it must arrange the corresponding token on the destination chain. A wrapped token is a representation of an asset issued on a different blockchain. Depending on the bridge, this step may involve an operator, a group of validators, or another verification system.</p>
+
+<p>Once the bridge authorizes the issue, a transaction must be sent to the destination chain and included in a block there. That chain may also require confirmations before a wallet or exchange treats the token as usable. Network congestion, a delayed bridge check or a failed destination transaction can add time even when the Monero deposit is settled.</p>
+
+<p>Check the stages separately:</p>
+
+<ul>
+<li><strong>Sent:</strong> Your wallet broadcast the XMR transaction.</li>
+<li><strong>Confirmed:</strong> The transaction appears in a Monero block.</li>
+<li><strong>Accepted:</strong> The bridge has met its deposit threshold and recognized the transfer.</li>
+<li><strong>Minted:</strong> The destination-chain transaction issued the wrapped token.</li>
+</ul>
+
+<h2>What should you check before retrying?</h2>
+
+<p>Compare the Monero transaction status with the bridge’s deposit status and the destination transaction, if one is shown. Use the transaction ID and the exact destination details from the original transfer. A bridge page may update later than the chain itself, so check whether the deposit has gained confirmations before treating it as missing.</p>
+
+<p>Do not send a second deposit just because the token has not appeared yet. First check whether the bridge marks the original transfer as pending, accepted, failed or refundable, and follow its stated recovery process if it has stopped. The useful takeaway is to track confirmation, bridge acceptance and minting as distinct checkpoints; only the last confirms that the wrapped token has reached the other chain.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/how-to-budget-trx-for-your-first-tron-swap/">How to Budget TRX for Your First TRON Swap</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/how-wrapped-assets-shape-a-tron-swap-route/">How wrapped assets shape a TRON swap route</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/what-ringct-hides-when-you-bridge-monero/">What RingCT Hides When You Bridge Monero</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/why-monero-bridge-deposits-can-take-longer-than-expected/">Why Monero bridge deposits can take longer than expected</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent publication. Not financial advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
