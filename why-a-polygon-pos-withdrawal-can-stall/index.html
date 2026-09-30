@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polygon PoS Withdrawal: Checkpoints, Claims and Delays</title>
+<meta name="description" content="A Polygon PoS withdrawal can pause at a checkpoint or claim step; check the transaction stage, wallet network and gas before retrying, since each stage has a different cause and next step.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/why-a-polygon-pos-withdrawal-can-stall/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why a Polygon PoS Withdrawal Can Stall">
+<meta property="og:description" content="A Polygon PoS withdrawal can pause at a checkpoint or claim step; check the transaction stage, wallet network and gas before retrying, since each stage has a different cause and next step.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/why-a-polygon-pos-withdrawal-can-stall/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/why-a-polygon-pos-withdrawal-can-stall-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why a Polygon PoS Withdrawal Can Stall"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why a Polygon PoS Withdrawal Can Stall">
+<meta name="twitter:description" content="A Polygon PoS withdrawal can pause at a checkpoint or claim step; check the transaction stage, wallet network and gas before retrying, since each stage has a different cause and next step.">
+<meta property="article:published_time" content="2026-09-30T13:04:12+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/why-a-polygon-pos-withdrawal-can-stall/#webpage",
+      "url": "https://dailynewscrypto.github.io/why-a-polygon-pos-withdrawal-can-stall/",
+      "name": "Polygon PoS Withdrawal: Checkpoints, Claims and Delays",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/why-a-polygon-pos-withdrawal-can-stall/#article",
+      "headline": "Why a Polygon PoS Withdrawal Can Stall",
+      "isAccessibleForFree": true,
+      "description": "A Polygon PoS withdrawal can pause at a checkpoint or claim step; check the transaction stage, wallet network and gas before retrying, since each stage has a different cause and next step.",
+      "datePublished": "2026-09-30T13:04:12+00:00",
+      "dateModified": "2026-09-30T13:04:12+00:00",
+      "url": "https://dailynewscrypto.github.io/why-a-polygon-pos-withdrawal-can-stall/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/why-a-polygon-pos-withdrawal-can-stall/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 597,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/covers/why-a-polygon-pos-withdrawal-can-stall.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why a Polygon PoS Withdrawal Can Stall",
+          "item": "https://dailynewscrypto.github.io/why-a-polygon-pos-withdrawal-can-stall/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">Why a Polygon PoS Withdrawal Can Stall</h1>
+<p class="s606161b">A Polygon PoS withdrawal can pause at a checkpoint or claim step; check the transaction stage, wallet network and gas before retrying, since each stage has a different cause and next step.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-09-30T13:04:12+00:00">Sep 30, 2026</time><span>3 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/why-a-polygon-pos-withdrawal-can-stall.jpg" alt="" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>A Polygon PoS withdrawal can look stuck because it has two stages: a wait for a checkpoint, then a claim transaction on Ethereum. That distinction matters: the first stage needs time for the bridge process to advance, while the second needs you to sign a new transaction and pay Ethereum gas.</p>
+
+<p>The withdrawal starts on Polygon, where the tokens are burned, or removed from circulation on that chain. A checkpoint is a record of Polygon activity submitted to Ethereum; after it includes the withdrawal, the bridge can release the matching asset on Ethereum. The <a href="https://paragraph.com/@owofadanuvoj67/what-is-polygon-bridge-and-how-do-you-move-tokens" rel="noopener">Polygon Bridge</a> process has more steps than a direct transfer, and that fuller guide explains the broader mechanics.</p>
+
+<h2>Why is my Polygon withdrawal waiting at a checkpoint?</h2>
+
+<p>If the status says it is waiting for a checkpoint, the withdrawal has not reached the Ethereum claim step yet. Checkpoints carry Polygon transaction data to Ethereum, so a delay here is different from a wallet transaction that is still pending. The wait can vary; there is no reliable fixed time to use as a deadline.</p>
+
+<p>Start by checking the Polygon transaction in your wallet or a block explorer. If it is confirmed, keep its transaction hash and check the bridge’s Transactions view for a status change. Avoid starting a second withdrawal just because the first has not moved: the original may still be progressing, and another attempt can create a separate transfer.</p>
+
+<h2>What should I do when the claim is ready?</h2>
+
+<p>When the checkpoint is recorded, the withdrawal still needs a claim on Ethereum. Open the bridge’s transaction view, select the pending withdrawal and follow the claim prompt. Switch your wallet to Ethereum and make sure it has ETH available for gas, the fee for submitting the transaction.</p>
+
+<p>The claim is a separate Ethereum transaction. If you close the bridge page after starting the withdrawal, you can return later and find the pending action using the same wallet. Polygon’s support guidance says there is no time limit to complete a pending withdrawal. Once the withdrawal has been initiated on Polygon and the tokens burned, however, it cannot be cancelled or reverted.</p>
+
+<h2>Why is my claim transaction still pending?</h2>
+
+<p>A claim can stall in the wallet even after the checkpoint is ready. A low gas setting, a sudden rise in Ethereum gas prices or an earlier queued transaction can hold it up. Check the wallet’s activity first: confirm whether the claim is pending, failed or already confirmed before sending another transaction.</p>
+
+<p>If the wallet shows a pending transaction, its own controls may let you speed it up or resolve a queue. Polygon support says the Portal may show a “Try Again” option if a transaction has been stuck for more than an hour. You can also search for the withdrawal’s transaction hash in the Portal and use “Confirm Exit” if that action is available.</p>
+
+<h2>How can I tell whether a withdrawal is truly stuck?</h2>
+
+<p>Match the status to the last confirmed transaction, rather than relying only on a spinner or an old browser tab. The practical checks are:</p>
+
+<ul>
+<li>Confirm the withdrawal transaction on Polygon.</li>
+<li>See whether the bridge is still waiting for a checkpoint or now asks for a claim.</li>
+<li>Check Ethereum wallet activity and confirm you have ETH for the claim fee.</li>
+<li>Use the original transaction hash when looking up a pending withdrawal.</li>
+</ul>
+
+<p>Only sign a claim that matches your withdrawal and destination wallet. Never share a recovery phrase to get help. In most cases, the useful next step is determined by which stage is pending: wait for the checkpoint, or complete the Ethereum claim.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/why-omnichain-messages-wait-for-light-client-proofs/">Why Omnichain Messages Wait for Light-Client Proofs</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/how-to-keep-cross-chain-liquidity-ready-for-a-spike/">How to keep cross-chain liquidity ready for a spike</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/get-your-wallet-ready-for-an-nft-mint-in-seven-steps/">Get Your Wallet Ready for an NFT Mint in Seven Steps</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/set-a-minimum-receive-amount-for-cross-chain-swaps/">Set a Minimum Receive Amount for Cross-Chain Swaps</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent publication. Not financial advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
