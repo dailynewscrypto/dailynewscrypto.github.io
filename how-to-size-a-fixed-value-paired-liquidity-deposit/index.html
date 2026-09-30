@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fixed-Value Paired Liquidity Deposit Sizing | Crypto Daybook</title>
+<meta name="description" content="A fixed-value liquidity deposit starts with a total budget, then splits it by the pool’s price and token ratio; the amounts can change as prices move.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/how-to-size-a-fixed-value-paired-liquidity-deposit/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to Size a Fixed-Value Paired Liquidity Deposit">
+<meta property="og:description" content="A fixed-value liquidity deposit starts with a total budget, then splits it by the pool’s price and token ratio; the amounts can change as prices move.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/how-to-size-a-fixed-value-paired-liquidity-deposit/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/how-to-size-a-fixed-value-paired-liquidity-deposit-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to Size a Fixed-Value Paired Liquidity Deposit"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Size a Fixed-Value Paired Liquidity Deposit">
+<meta name="twitter:description" content="A fixed-value liquidity deposit starts with a total budget, then splits it by the pool’s price and token ratio; the amounts can change as prices move.">
+<meta property="article:published_time" content="2026-09-30T17:50:55+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/how-to-size-a-fixed-value-paired-liquidity-deposit/#webpage",
+      "url": "https://dailynewscrypto.github.io/how-to-size-a-fixed-value-paired-liquidity-deposit/",
+      "name": "Fixed-Value Paired Liquidity Deposit Sizing | Crypto Daybook",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/how-to-size-a-fixed-value-paired-liquidity-deposit/#article",
+      "headline": "How to Size a Fixed-Value Paired Liquidity Deposit",
+      "isAccessibleForFree": true,
+      "description": "A fixed-value liquidity deposit starts with a total budget, then splits it by the pool’s price and token ratio; the amounts can change as prices move.",
+      "datePublished": "2026-09-30T17:50:55+00:00",
+      "dateModified": "2026-09-30T17:50:55+00:00",
+      "url": "https://dailynewscrypto.github.io/how-to-size-a-fixed-value-paired-liquidity-deposit/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/how-to-size-a-fixed-value-paired-liquidity-deposit/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 533,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/covers/how-to-size-a-fixed-value-paired-liquidity-deposit.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to Size a Fixed-Value Paired Liquidity Deposit",
+          "item": "https://dailynewscrypto.github.io/how-to-size-a-fixed-value-paired-liquidity-deposit/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">How to Size a Fixed-Value Paired Liquidity Deposit</h1>
+<p class="s606161b">A fixed-value liquidity deposit starts with a total budget, then splits it by the pool’s price and token ratio; the amounts can change as prices move.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-09-30T17:50:55+00:00">Sep 30, 2026</time><span>2 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/how-to-size-a-fixed-value-paired-liquidity-deposit.jpg" alt="" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>To size a fixed-value paired liquidity deposit, choose a total budget, then divide it between the two tokens using their current pool price. That gives you a starting amount for each side, not a guaranteed value for the position later. For example, at 2,400 USDC per ETH, a $1,200 deposit would start with 0.25 ETH and 600 USDC, before transaction costs.</p>
+
+<h2>How do you split a fixed-value deposit?</h2>
+<p>For a standard pool that holds two assets in roughly equal value, put half the budget into each side at the pool’s current price. If your budget is V and one unit of the first token costs P units of the second, the amounts are V ÷ (2P) of the first token and V ÷ 2 of the second. In the example above, $600 buys 0.25 ETH, while the other $600 buys 600 USDC.</p>
+<p>Check the pool’s displayed ratio before you confirm. In a simple constant-product pool, the reserve ratio helps set the trading price, so a deposit that does not match the pool may leave some of one token unused or require a swap. A <a href="https://www.tumblr.com/blockchainguru/829101006764834816/what-is-the-exchange-and-what-do-you-get" rel="noopener">fuller guide to base swap mechanics and what the exchange returns</a> explains that process in more detail. Compare the pool’s quote with a separate market reference too: if they differ, a deposit based only on the pool quote may put assets into a pool at a price that is already out of line.</p>
+
+<h2>What should you check before depositing?</h2>
+<p>Start with the amount you can leave in the position, then account for costs and the pool’s rules. The value you enter in a calculator may cover only the tokens; network fees are paid separately. Check what the deposit screen estimates you will provide, and whether it leaves a remainder of either token in your wallet.</p>
+<ul>
+<li><strong>Total budget:</strong> Decide whether your figure includes network fees or is the amount for tokens alone.</li>
+<li><strong>Pool ratio:</strong> Check the estimated token amounts against the current reserves and the price you see elsewhere.</li>
+<li><strong>Position type:</strong> A concentrated-liquidity position uses a selected price range. Its token mix depends on the current price and that range, so a half-and-half value split may not apply.</li>
+</ul>
+<p>These checks help avoid a deposit that is smaller than intended or made at a price you did not expect. They do not remove the risk that the pool’s assets will change in value.</p>
+
+<h2>How can the position’s value change?</h2>
+<p>A fixed-value split describes the deposit at one point in time. Afterward, trades change the pool’s asset mix as its price moves. Your share may end up holding more of the asset that fell in price and less of the one that rose. This difference from simply holding both tokens is often called impermanent loss: the gap can shrink or grow while the position remains open, and fees may offset some of it but do not guarantee a gain.</p>
+<p>For most readers, the clearest approach is to size from a fixed total budget, use the pool’s current ratio as a check, and decide in advance how much price movement the position can tolerate. Recheck the amounts when prices or a concentrated position’s range changes; the original split is only a starting point.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/how-to-compare-a-bsc-tokens-price-before-swapping/">How to Compare a BSC Token’s Price Before Swapping</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/clearing-contract-storage-can-still-cost-tron-energy/">Clearing Contract Storage Can Still Cost TRON Energy</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/renting-tron-energy-what-wallet-controls-matter/">Renting TRON Energy: What Wallet Controls Matter</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/why-a-monero-refund-fee-estimate-can-change/">Why a Monero Refund Fee Estimate Can Change</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent publication. Not financial advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
