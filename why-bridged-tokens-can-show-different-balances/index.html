@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bridged token decimals and displayed balances explained</title>
+<meta name="description" content="A bridged token can show a different raw balance because decimals set display units; learn the conversion, rounding limits and checks that keep transfers clear.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/why-bridged-tokens-can-show-different-balances/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why bridged tokens can show different balances">
+<meta property="og:description" content="A bridged token can show a different raw balance because decimals set display units; learn the conversion, rounding limits and checks that keep transfers clear.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/why-bridged-tokens-can-show-different-balances/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/why-bridged-tokens-can-show-different-balances-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why bridged tokens can show different balances"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why bridged tokens can show different balances">
+<meta name="twitter:description" content="A bridged token can show a different raw balance because decimals set display units; learn the conversion, rounding limits and checks that keep transfers clear.">
+<meta property="article:published_time" content="2026-09-30T11:57:29+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/why-bridged-tokens-can-show-different-balances/#webpage",
+      "url": "https://dailynewscrypto.github.io/why-bridged-tokens-can-show-different-balances/",
+      "name": "Bridged token decimals and displayed balances explained",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/why-bridged-tokens-can-show-different-balances/#article",
+      "headline": "Why bridged tokens can show different balances",
+      "isAccessibleForFree": true,
+      "description": "A bridged token can show a different raw balance because decimals set display units; learn the conversion, rounding limits and checks that keep transfers clear.",
+      "datePublished": "2026-09-30T11:57:29+00:00",
+      "dateModified": "2026-09-30T11:57:29+00:00",
+      "url": "https://dailynewscrypto.github.io/why-bridged-tokens-can-show-different-balances/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/why-bridged-tokens-can-show-different-balances/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 495,
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/covers/why-bridged-tokens-can-show-different-balances.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why bridged tokens can show different balances",
+          "item": "https://dailynewscrypto.github.io/why-bridged-tokens-can-show-different-balances/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">Why bridged tokens can show different balances</h1>
+<p class="s606161b">A bridged token can show a different raw balance because decimals set display units; learn the conversion, rounding limits and checks that keep transfers clear.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-09-30T11:57:29+00:00">Sep 30, 2026</time><span>2 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/why-bridged-tokens-can-show-different-balances.jpg" alt="" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>A bridged token can show a different raw balance from its original because each token’s decimals set how its smallest units appear on screen. The displayed balance is a formatted view of an integer recorded by the contract, not a separate amount stored as a decimal number.</p>
+
+<p>That distinction matters when you compare tokens across chains or enter a transfer. For a separate example of a wrapped asset, see <a href="https://graph.org/ZeroFi-Turn-XMR-Into-Wrapped-Monero-on-Sepolia-09-30" rel="noopener">how ZeroFi wraps XMR on Sepolia</a>. The same basic question applies: what unit does the token contract count?</p>
+
+<h2>What do token decimals mean?</h2>
+
+<p>Decimals tell a wallet how many places to move the decimal point when it displays a token balance. ERC-20’s decimals field is optional metadata for user interfaces; it does not change how the contract adds, subtracts or transfers balances.</p>
+
+<p>For example, a token with 6 decimals represents 1 token as 1,000,000 base units. A balance of 12,345,678 base units displays as 12.345678 tokens. If the same integer belonged to a token with 18 decimals, it would display as 0.000000000012345678 tokens. The raw number alone cannot tell you the human-readable balance. You also need the token’s decimals.</p>
+
+<h2>Why can a bridged token show a different balance?</h2>
+
+<p>A bridge moves value between networks by using contracts that lock and release tokens, or burn and mint representations. The destination token may use a different number of decimals from the original. The bridge must then convert amounts so the destination units represent the intended value.</p>
+
+<p>Suppose an original token has 6 decimals and its bridged version has 18. To represent 1 original token, the destination contract could record 1,000,000,000,000,000,000 base units. The raw integers differ, but both display as 1 token. This is a change in unit scale, not proof that the bridge created extra value. Bridge designs and conversion rules vary, so check the specific token contracts and bridge details.</p>
+
+<p>Conversions can also leave a remainder when the destination uses fewer decimals. A contract cannot record a fraction smaller than its smallest unit, so it may round down or reject an amount that does not fit. The leftover fraction is often called dust.</p>
+
+<h2>How can you check a bridged token balance?</h2>
+
+<p>Check the contract and its decimals on the network where the token sits. Then compare the displayed amount with the contract’s raw balance using that decimals value. A wallet’s label or ticker alone cannot confirm that you are viewing the intended token.</p>
+
+<ul>
+<li>Confirm the network and token contract address.</li>
+<li>Read the token’s decimals value; ERC-20 does not require every token to provide it.</li>
+<li>Convert the raw balance by dividing it by 10 raised to the decimals value.</li>
+<li>When transferring across chains, follow the bridge’s conversion and minimum-amount rules.</li>
+</ul>
+
+<p>Use the destination token’s decimals when reading its balance or preparing a transfer on that chain. Use the source token’s decimals for the original. If the numbers seem far apart, compare the formatted amounts and the bridge’s conversion rule before concluding that the balance is wrong.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/four-checks-to-show-zerofi-zxmr-in-metamask/">Four Checks to Show ZeroFi zXMR in MetaMask</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/four-decimal-checks-for-your-first-tron-swap/">Four Decimal Checks for Your First TRON Swap</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/four-checks-when-a-usdt-swap-stalls-on-tron/">Four checks when a USDT swap stalls on TRON</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/how-tron-energy-affects-frequent-swaps/">How TRON Energy affects frequent swaps</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent publication. Not financial advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
