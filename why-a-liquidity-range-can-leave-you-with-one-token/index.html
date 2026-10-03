@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Liquidity ranges: why a position can hold one token</title>
+<meta name="description" content="A concentrated liquidity range can leave your deposit in one token when price moves beyond its bounds. Learn what happens to the position and its fees.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/why-a-liquidity-range-can-leave-you-with-one-token/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why a liquidity range can leave you with one token">
+<meta property="og:description" content="A concentrated liquidity range can leave your deposit in one token when price moves beyond its bounds. Learn what happens to the position and its fees.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/why-a-liquidity-range-can-leave-you-with-one-token/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/why-a-liquidity-range-can-leave-you-with-one-token-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why a liquidity range can leave you with one token"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why a liquidity range can leave you with one token">
+<meta name="twitter:description" content="A concentrated liquidity range can leave your deposit in one token when price moves beyond its bounds. Learn what happens to the position and its fees.">
+<meta property="article:published_time" content="2026-10-03T23:53:41+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/why-a-liquidity-range-can-leave-you-with-one-token/#webpage",
+      "url": "https://dailynewscrypto.github.io/why-a-liquidity-range-can-leave-you-with-one-token/",
+      "name": "Liquidity ranges: why a position can hold one token",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/why-a-liquidity-range-can-leave-you-with-one-token/#article",
+      "headline": "Why a liquidity range can leave you with one token",
+      "isAccessibleForFree": true,
+      "description": "A concentrated liquidity range can leave your deposit in one token when price moves beyond its bounds. Learn what happens to the position and its fees.",
+      "datePublished": "2026-10-03T23:53:41+00:00",
+      "dateModified": "2026-10-03T23:53:41+00:00",
+      "url": "https://dailynewscrypto.github.io/why-a-liquidity-range-can-leave-you-with-one-token/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/why-a-liquidity-range-can-leave-you-with-one-token/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 518,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/why-a-liquidity-range-can-leave-you-with-one-token-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/why-a-liquidity-range-can-leave-you-with-one-token-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/why-a-liquidity-range-can-leave-you-with-one-token-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why a liquidity range can leave you with one token",
+          "item": "https://dailynewscrypto.github.io/why-a-liquidity-range-can-leave-you-with-one-token/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">Why a liquidity range can leave you with one token</h1>
+<p class="s606161b">A concentrated liquidity range can leave your deposit in one token when price moves beyond its bounds. Learn what happens to the position and its fees.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-10-03T23:53:41+00:00">Oct 3, 2026</time><span>3 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/why-a-liquidity-range-can-leave-you-with-one-token.jpg" alt="" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>A liquidity range can leave your deposit in one token when the pool price moves past one of the range’s limits. The position does not vanish or automatically sell your assets; it becomes inactive for swaps until the price returns to the range or you change the position.</p>
+
+<p>That trade-off is central to concentrated liquidity, where a provider chooses the prices at which their tokens will be used. If you provide liquidity on Byreal, first check the range and the pool’s price direction. For the separate steps to remove funds and collect accrued fees, see this guide to <a href="https://ezekielgacj152703.blog-eye.com/43288117/how-to-withdraw-byreal-liquidity-and-claim-fees" rel="noopener">Byreal liquidity withdrawal and fee claims</a>.</p>
+
+<h2>Why does a range turn into one token?</h2>
+
+<p>A concentrated liquidity position uses two assets within a chosen price band. As traders swap through the pool, the position’s mix of assets shifts: it holds more of one token toward one edge and more of the other toward the opposite edge. At either boundary, it can become entirely one token.</p>
+
+<p>Which token remains depends on how the pool quotes the pair and which boundary the price crosses. For example, if a pool quotes Token A in Token B, a move above the range can leave the position holding Token A; a move below can leave it holding Token B. The direction reverses if the pair is quoted the other way. Check the pair’s displayed price before choosing a range.</p>
+
+<h2>What happens to fees when price leaves the range?</h2>
+
+<p>While the price is inside the range, the position can take part in swaps and earn a share of fees. Once price moves outside it, the position is generally inactive, so it stops earning fees from swaps until price returns or you adjust the range. Fees already earned may still be available to collect, depending on the pool’s interface and rules.</p>
+
+<p>Being one-sided is not the same as losing the asset. But the remaining token can rise or fall in value, and its value may differ from what you would have held by keeping both tokens outside the pool. That difference is often called impermanent loss: the gap between a liquidity position’s value and simply holding the original assets.</p>
+
+<h2>How should you choose a liquidity range?</h2>
+
+<p>A narrower range concentrates more of your deposit where you expect trading to happen. That can make more of the capital active in that band, but price can leave it sooner, stopping fee earnings and requiring attention. A wider range stays active across more prices, though less of the deposit is concentrated at any one price.</p>
+
+<ul>
+<li>Check the pool’s quoted price and the range’s lower and upper limits.</li>
+<li>Choose a range you can monitor; a narrow band needs more upkeep.</li>
+<li>Decide in advance whether you will wait for price to return or reset the range.</li>
+<li>Compare expected fees with the risk of holding one token as its price changes.</li>
+</ul>
+
+<p>For most readers, a range they can understand and maintain is a better starting point than the tightest possible band. A range is a choice about where your assets work, not a promise of steady fees or a fixed token mix.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/blast-to-wind-down-ethereum-network-as-costs-top-revenue/">Blast to wind down Ethereum network as costs top revenue</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/how-to-receive-swap-xmr-in-monero-gui/">How to Receive Swap XMR in Monero GUI</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/what-cross-chain-signing-means-for-exchange-users/">What cross-chain signing means for exchange users</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/when-should-wallet-traders-trust-a-transaction/">When should wallet traders trust a transaction?</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent publication. Not financial advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
