@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-chain bridge refunds after a failed arrival</title>
+<meta name="description" content="A failed cross-chain transfer may leave funds committed on the source chain, so check the route status and recovery rules before retrying or claiming a refund.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/what-to-do-when-a-cross-chain-transfer-fails-to-arrive/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="What to do when a cross-chain transfer fails to arrive">
+<meta property="og:description" content="A failed cross-chain transfer may leave funds committed on the source chain, so check the route status and recovery rules before retrying or claiming a refund.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/what-to-do-when-a-cross-chain-transfer-fails-to-arrive/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/what-to-do-when-a-cross-chain-transfer-fails-to-arrive-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="What to do when a cross-chain transfer fails to arrive"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What to do when a cross-chain transfer fails to arrive">
+<meta name="twitter:description" content="A failed cross-chain transfer may leave funds committed on the source chain, so check the route status and recovery rules before retrying or claiming a refund.">
+<meta property="article:published_time" content="2026-10-04T02:53:28+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/what-to-do-when-a-cross-chain-transfer-fails-to-arrive/#webpage",
+      "url": "https://dailynewscrypto.github.io/what-to-do-when-a-cross-chain-transfer-fails-to-arrive/",
+      "name": "Cross-chain bridge refunds after a failed arrival",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/what-to-do-when-a-cross-chain-transfer-fails-to-arrive/#article",
+      "headline": "What to do when a cross-chain transfer fails to arrive",
+      "isAccessibleForFree": true,
+      "description": "A failed cross-chain transfer may leave funds committed on the source chain, so check the route status and recovery rules before retrying or claiming a refund.",
+      "datePublished": "2026-10-04T02:53:28+00:00",
+      "dateModified": "2026-10-04T02:53:28+00:00",
+      "url": "https://dailynewscrypto.github.io/what-to-do-when-a-cross-chain-transfer-fails-to-arrive/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/what-to-do-when-a-cross-chain-transfer-fails-to-arrive/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 536,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/what-to-do-when-a-cross-chain-transfer-fails-to-arrive-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/what-to-do-when-a-cross-chain-transfer-fails-to-arrive-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/what-to-do-when-a-cross-chain-transfer-fails-to-arrive-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "What to do when a cross-chain transfer fails to arrive",
+          "item": "https://dailynewscrypto.github.io/what-to-do-when-a-cross-chain-transfer-fails-to-arrive/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">What to do when a cross-chain transfer fails to arrive</h1>
+<p class="s606161b">A failed cross-chain transfer may leave funds committed on the source chain, so check the route status and recovery rules before retrying or claiming a refund.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-10-04T02:53:28+00:00">Oct 4, 2026</time><span>3 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/what-to-do-when-a-cross-chain-transfer-fails-to-arrive.jpg" alt="" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>A cross-chain transfer that fails to arrive may still have completed on the source chain, so check its status and recovery path before sending again. A bridge moves assets or messages between blockchains, which do not share one transaction system. A route can therefore succeed on one chain and stall on the other. The first task is to find out which step failed.</p>
+
+<p>Each route handles that gap differently. Some lock tokens on the source chain and release matching tokens on the destination; others use liquidity, meaning funds already available there. For a fuller explanation of how routes and their providers can differ, see this <a href="https://anitaknus322982.verybigblog.com/41984176/bungee-bridge-explained-choosing-a-cross-chain-route" rel="noopener">bungee bridge</a> explainer. Those differences matter because a refund depends on the route’s own rules.</p>
+
+<h2>Does a failed arrival mean the funds are lost?</h2>
+<p>No: a missing destination transfer does not by itself show that the source transaction failed or that the funds are lost. Check the source transaction in the wallet or chain explorer, a public tool for viewing on-chain activity. If it is pending, the network may still be processing it. If it is confirmed, look for a destination transaction or a route status showing where the transfer stopped.</p>
+
+<p>A transfer can wait for a relayer, a service that carries transaction data between chains, or fail because the destination action could not complete. The route may also have a minimum amount, token, or network requirement. A status page can narrow down the problem, but it does not replace the transaction record on each chain.</p>
+
+<h2>How does a bridge refund work?</h2>
+<p>A refund returns funds through the recovery process set by the route. Depending on its design, that might happen automatically, require a claim transaction, or involve support from the provider. A claim transaction is a separate on-chain action, and it may require a network fee. Some routes instead offer a retry or another recovery step.</p>
+
+<p>Before acting, find the exact route and transfer record. Check:</p>
+<ul>
+<li>Whether the source transaction is confirmed, pending, or failed.</li>
+<li>Whether the destination transaction exists or the route reports a delay.</li>
+<li>What recovery options the route lists for that specific transfer.</li>
+<li>Whether a claim or retry needs a fee, and which wallet and network it uses.</li>
+</ul>
+
+<h2>When should you retry a transfer?</h2>
+<p>Retry only after you understand what happened to the first transfer. If it is still pending, a second send could create a second transfer. If the source transaction failed, check whether the wallet has already returned the funds. If the source succeeded but the destination leg failed, follow the route’s recovery instructions instead of assuming a new send will recover the first one.</p>
+
+<p>Use the route’s official status page or help channel, reached from a source you trust. Never share a seed phrase or private key to claim a refund; those give control of the wallet. Keep the transaction hashes, which are public IDs for on-chain actions, and any route reference number together. They help identify the transfer if you need support.</p>
+
+<p>The practical rule is simple: confirm the source result, locate the destination step, then use the recovery path attached to that route. “Failed to arrive” describes what you see, but the transaction records show what happened and which refund options remain.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/why-a-liquidity-range-can-leave-you-with-one-token/">Why a liquidity range can leave you with one token</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/blast-to-wind-down-ethereum-network-as-costs-top-revenue/">Blast to wind down Ethereum network as costs top revenue</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/how-to-receive-swap-xmr-in-monero-gui/">How to Receive Swap XMR in Monero GUI</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/what-cross-chain-signing-means-for-exchange-users/">What cross-chain signing means for exchange users</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent publication. Not financial advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
