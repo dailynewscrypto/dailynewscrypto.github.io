@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Destination Gas for Cross-Chain Swaps: How to Estimate It</title>
+<meta name="description" content="A cross-chain swap needs enough destination gas to finish its final call; estimate the full action on the receiving chain, then price and fund it there.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/how-to-size-destination-gas-for-a-cross-chain-swap/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to Size Destination Gas for a Cross-Chain Swap">
+<meta property="og:description" content="A cross-chain swap needs enough destination gas to finish its final call; estimate the full action on the receiving chain, then price and fund it there.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/how-to-size-destination-gas-for-a-cross-chain-swap/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/how-to-size-destination-gas-for-a-cross-chain-swap-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to Size Destination Gas for a Cross-Chain Swap"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Size Destination Gas for a Cross-Chain Swap">
+<meta name="twitter:description" content="A cross-chain swap needs enough destination gas to finish its final call; estimate the full action on the receiving chain, then price and fund it there.">
+<meta property="article:published_time" content="2026-10-15T21:02:50+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/how-to-size-destination-gas-for-a-cross-chain-swap/#webpage",
+      "url": "https://dailynewscrypto.github.io/how-to-size-destination-gas-for-a-cross-chain-swap/",
+      "name": "Destination Gas for Cross-Chain Swaps: How to Estimate It",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/how-to-size-destination-gas-for-a-cross-chain-swap/#article",
+      "headline": "How to Size Destination Gas for a Cross-Chain Swap",
+      "isAccessibleForFree": true,
+      "description": "A cross-chain swap needs enough destination gas to finish its final call; estimate the full action on the receiving chain, then price and fund it there.",
+      "datePublished": "2026-10-15T21:02:50+00:00",
+      "dateModified": "2026-10-15T21:02:50+00:00",
+      "url": "https://dailynewscrypto.github.io/how-to-size-destination-gas-for-a-cross-chain-swap/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/how-to-size-destination-gas-for-a-cross-chain-swap/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 510,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/how-to-size-destination-gas-for-a-cross-chain-swap-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/how-to-size-destination-gas-for-a-cross-chain-swap-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/how-to-size-destination-gas-for-a-cross-chain-swap-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to Size Destination Gas for a Cross-Chain Swap",
+          "item": "https://dailynewscrypto.github.io/how-to-size-destination-gas-for-a-cross-chain-swap/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailynewscrypto.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">How to Size Destination Gas for a Cross-Chain Swap</h1>
+<p class="s606161b">A cross-chain swap needs enough destination gas to finish its final call; estimate the full action on the receiving chain, then price and fund it there.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-10-15T21:02:50+00:00">Oct 15, 2026 · 21:02 UTC</time><span>3 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/how-to-size-destination-gas-for-a-cross-chain-swap.jpg" alt="How to Size Destination Gas for a Cross-Chain Swap" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>Size destination gas by estimating the work the transaction must do on the receiving chain, then multiplying that gas amount by the chain’s gas price. This covers the final step of the swap, which can cost more than simply receiving a token.</p>
+
+<h2>What does destination gas pay for?</h2>
+
+<p>Destination gas pays for the transaction that completes after the bridge delivers funds. That may be a contract call, a swap into another token, or both. Gas is the network fee for processing those actions, and each chain charges it in its own native token.</p>
+
+<p>A token transfer can arrive without giving the recipient any native token for a follow-up transaction. Some routes let a relayer—a service that submits the destination transaction—cover the fee and deduct its cost from the swap. Others leave the user to pay. For more on that trade-off, see this <a href="https://blockchainnewshub.github.io/paraswap-and-the-cost-of-arriving-without-destination-gas/" rel="noopener">ParaSwap guide to arriving without destination gas</a>. The route’s fee details should make clear who pays and in what asset.</p>
+
+<h2>How do you estimate the amount?</h2>
+
+<p>Estimate the complete destination action, using the actual route and transaction data where possible. A simple transfer and a transfer followed by a token swap do different amounts of work, so a generic gas figure can miss the main cost.</p>
+
+<ul>
+<li>Check which destination-chain actions the route will run, including any final swap or contract call.</li>
+<li>Use a quote or simulation for that route’s destination transaction. Check whether it includes the full action and reports gas units or a fee estimate.</li>
+<li>Price those gas units using the destination chain’s current gas price. Fees can change before the transaction is submitted.</li>
+<li>Confirm whether the route deducts the fee from the delivered tokens or requires native tokens in your wallet.</li>
+</ul>
+
+<p>For a rough fee calculation, multiply estimated gas units by the gas price per unit. To compare that cost with the value of the tokens received, convert the result using the native token’s price. Treat this as an estimate: a different route, a changed gas price, or a transaction that uses more gas can change the final cost.</p>
+
+<h2>How much extra gas should you allow?</h2>
+
+<p>Use a route-specific estimate with a modest buffer when you control the transaction, because gas prices and execution costs can move between the quote and submission. A larger buffer ties up more funds and may make a route look less attractive than it is. If a route’s provider handles destination gas, compare its quoted fee and minimum received amount instead of adding a separate wallet balance twice.</p>
+
+<p>Before signing, check the destination chain, the action that will execute there, the fee currency, and the minimum amount you expect to receive. If you must pay the destination fee yourself, keep enough of that chain’s native token in the receiving wallet. If the route deducts the fee from the swap, compare the net amount after that deduction.</p>
+
+<p>The useful figure is not a fixed gas allowance for every cross-chain swap. It is the cost of the specific destination action, at the destination chain’s current gas price, with the fee payer confirmed.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/direct-destination-swaps-how-they-work-across-chains/">Direct destination swaps: how they work across chains</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/a-bridge-quote-is-only-useful-if-you-compare-what-arrives/">A Bridge Quote Is Only Useful If You Compare What Arrives</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/starkware-opens-offmarket-for-polymarket-traders/">StarkWare opens OffMarket for Polymarket traders</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/how-to-choose-a-faster-cheaper-crypto-bridge/">How to Choose a Faster, Cheaper Crypto Bridge</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent reporting. Not investment advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
