@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token decimals in cross-chain swaps, explained</title>
+<meta name="description" content="Token decimals turn raw units into readable amounts, and mismatches can make a cross-chain swap look rounded, mispriced or short after a transfer.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/why-token-decimals-matter-in-cross-chain-swaps/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why token decimals matter in cross-chain swaps">
+<meta property="og:description" content="Token decimals turn raw units into readable amounts, and mismatches can make a cross-chain swap look rounded, mispriced or short after a transfer.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/why-token-decimals-matter-in-cross-chain-swaps/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/why-token-decimals-matter-in-cross-chain-swaps-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why token decimals matter in cross-chain swaps"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why token decimals matter in cross-chain swaps">
+<meta name="twitter:description" content="Token decimals turn raw units into readable amounts, and mismatches can make a cross-chain swap look rounded, mispriced or short after a transfer.">
+<meta property="article:published_time" content="2026-10-17T12:28:05+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/why-token-decimals-matter-in-cross-chain-swaps/#webpage",
+      "url": "https://dailynewscrypto.github.io/why-token-decimals-matter-in-cross-chain-swaps/",
+      "name": "Token decimals in cross-chain swaps, explained",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/why-token-decimals-matter-in-cross-chain-swaps/#article",
+      "headline": "Why token decimals matter in cross-chain swaps",
+      "isAccessibleForFree": true,
+      "description": "Token decimals turn raw units into readable amounts, and mismatches can make a cross-chain swap look rounded, mispriced or short after a transfer.",
+      "datePublished": "2026-10-17T12:28:05+00:00",
+      "dateModified": "2026-10-17T12:28:05+00:00",
+      "url": "https://dailynewscrypto.github.io/why-token-decimals-matter-in-cross-chain-swaps/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/why-token-decimals-matter-in-cross-chain-swaps/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 515,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/why-token-decimals-matter-in-cross-chain-swaps-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/why-token-decimals-matter-in-cross-chain-swaps-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/why-token-decimals-matter-in-cross-chain-swaps-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why token decimals matter in cross-chain swaps",
+          "item": "https://dailynewscrypto.github.io/why-token-decimals-matter-in-cross-chain-swaps/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailynewscrypto.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">Why token decimals matter in cross-chain swaps</h1>
+<p class="s606161b">Token decimals turn raw units into readable amounts, and mismatches can make a cross-chain swap look rounded, mispriced or short after a transfer.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-10-17T12:28:05+00:00">Oct 17, 2026 · 12:28 UTC</time><span>3 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/why-token-decimals-matter-in-cross-chain-swaps.jpg" alt="Why token decimals matter in cross-chain swaps" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>Token decimals tell a wallet or swap service how to turn a token’s raw units into a readable amount. In a cross-chain swap, that conversion matters because the token on one chain may use a different number of decimal places from its counterpart on another.</p>
+
+<p>For example, a token with six decimals represents 1.25 tokens as 1,250,000 raw units. With 18 decimals, the same displayed amount is represented by 1,250,000,000,000,000,000 raw units. The numbers differ; the displayed amount is the same. For the separate question of delays, see this <a href="https://paragraph.com/@hiyewi2221/why-is-my-super-bridge-stablecoin-transfer-pending" rel="noopener">guide to a pending Super Bridge stablecoin transfer</a>. Decimal conversion affects the amount shown, while a pending transfer is a separate issue.</p>
+
+<h2>What do token decimals mean?</h2>
+
+<p>Decimals set the scale used to display a token’s smallest units. They do not, by themselves, set its price or value. A token contract typically handles balances and transfers as whole numbers of those units, while wallets place the decimal point for people to read.</p>
+
+<p>That means “1 token” is not necessarily the same raw number across tokens. A swap service has to read the right decimal setting for each token it handles. If it assumes the wrong setting, an amount can appear many times too large or too small, even if the underlying transfer used a valid integer amount.</p>
+
+<h2>How are decimals handled in a cross-chain swap?</h2>
+
+<p>A cross-chain swap converts amounts for the source and destination tokens separately. A bridge may lock tokens on one chain and release or mint a corresponding token on another; the swap route then accounts for the units and decimals of both assets.</p>
+
+<p>In a simplified example, a source token with six decimals and a destination token with 18 decimals may each represent 1.25 tokens with very different raw numbers. The route must convert those numbers before comparing amounts or carrying out the swap. A displayed output can also differ from the input because the assets have different prices, fees apply, or the trade moves the market price.</p>
+
+<p>Rounding can matter when a conversion produces a fraction of the destination token’s smallest unit. Since contracts transfer whole raw units, the fraction may be dropped. The smaller the amount and the coarser the destination token’s precision, the more visible that rounding can be.</p>
+
+<h2>What should you check before confirming?</h2>
+
+<p>Check the token and network details, then compare the quoted output with the amount you expect to receive. A wallet’s displayed balance is easier to read than raw units, but the decimal setting behind it must match the token being used.</p>
+
+<ul>
+<li>Confirm the token contract and chain for both sides of the swap.</li>
+<li>Read the quoted output and fees before approving the transaction.</li>
+<li>Check whether the destination token is a bridged version with its own contract and decimal setting.</li>
+<li>For a very small transfer, account for possible rounding to whole raw units.</li>
+</ul>
+
+<p>Decimals are a display scale with real effects on conversion and rounding. For most readers, the practical rule is simple: compare token amounts as displayed, check the route’s quoted output, and make sure the token and chain are correct before confirming.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/ledger-reviews-wallet-sales-after-90-million-hack/">Ledger reviews wallet sales after $90 million hack</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/one-step-swaps-or-bridge-trades-how-to-compare-them/">One-Step Swaps or Bridge Trades: How to Compare Them</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/check-the-whole-route-before-choosing-a-crypto-bridge/">Check the Whole Route Before Choosing a Crypto Bridge</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/when-a-token-hook-changes-your-bridge-route/">When a Token Hook Changes Your Bridge Route</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent reporting. Not investment advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
