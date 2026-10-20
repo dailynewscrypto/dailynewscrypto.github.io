@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>renbridge: How Its Three Transfer Routes Worked</title>
+<meta name="description" content="RenBridge offered three routes: mint a wrapped asset, release its underlying asset, or move an existing ren-asset between chains, with different steps and trade-offs.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/renbridge-explained-how-its-three-transfer-routes-worked/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="RenBridge explained: how its three transfer routes worked">
+<meta property="og:description" content="RenBridge offered three routes: mint a wrapped asset, release its underlying asset, or move an existing ren-asset between chains, with different steps and trade-offs.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/renbridge-explained-how-its-three-transfer-routes-worked/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/renbridge-explained-how-its-three-transfer-routes-worked-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="RenBridge explained: how its three transfer routes worked"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="RenBridge explained: how its three transfer routes worked">
+<meta name="twitter:description" content="RenBridge offered three routes: mint a wrapped asset, release its underlying asset, or move an existing ren-asset between chains, with different steps and trade-offs.">
+<meta property="article:published_time" content="2026-10-20T14:11:33+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/renbridge-explained-how-its-three-transfer-routes-worked/#webpage",
+      "url": "https://dailynewscrypto.github.io/renbridge-explained-how-its-three-transfer-routes-worked/",
+      "name": "renbridge: How Its Three Transfer Routes Worked",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/renbridge-explained-how-its-three-transfer-routes-worked/#article",
+      "headline": "RenBridge explained: how its three transfer routes worked",
+      "isAccessibleForFree": true,
+      "description": "RenBridge offered three routes: mint a wrapped asset, release its underlying asset, or move an existing ren-asset between chains, with different steps and trade-offs.",
+      "datePublished": "2026-10-20T14:11:33+00:00",
+      "dateModified": "2026-10-20T14:11:33+00:00",
+      "url": "https://dailynewscrypto.github.io/renbridge-explained-how-its-three-transfer-routes-worked/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/renbridge-explained-how-its-three-transfer-routes-worked/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 532,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/renbridge-explained-how-its-three-transfer-routes-worked-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/renbridge-explained-how-its-three-transfer-routes-worked-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/renbridge-explained-how-its-three-transfer-routes-worked-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "RenBridge explained: how its three transfer routes worked",
+          "item": "https://dailynewscrypto.github.io/renbridge-explained-how-its-three-transfer-routes-worked/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailynewscrypto.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">RenBridge explained: how its three transfer routes worked</h1>
+<p class="s606161b">RenBridge offered three routes: mint a wrapped asset, release its underlying asset, or move an existing ren-asset between chains, with different steps and trade-offs.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-10-20T14:11:33+00:00">Oct 20, 2026 · 14:11 UTC</time><span>3 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/renbridge-explained-how-its-three-transfer-routes-worked.jpg" alt="RenBridge explained: how its three transfer routes worked" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>RenBridge had three transfer routes: mint a wrapped asset, release an underlying asset, or move an existing ren-asset directly between chains. The route depended on what the user held and where it needed to go. RenVM, the network behind the service, handled the cross-chain steps. For readers checking renbridge, that distinction explains why some transfers touched the asset’s original blockchain and others did not. Ren’s <a href="https://renbridge.cc" rel="noopener">renbridge</a> design made the choice about the asset’s starting point, not just its destination.</p>
+
+<h2>What were renbridge’s three transfer routes?</h2>
+<p>RenBridge 3.0 grouped transfers into minting, releasing and bridging. Minting created a Ren-wrapped token on a supported chain; releasing sent an asset out of RenVM custody; bridging moved an existing Ren-wrapped asset between supported chains.</p>
+<ul>
+<li><strong>Mint:</strong> A user sent an asset into RenVM, which minted a token representing it on the destination chain. For example, BTC could be locked on Bitcoin and represented as renBTC on Ethereum.</li>
+<li><strong>Release:</strong> A user burned a Ren-wrapped token, and RenVM released the corresponding original asset to the address they supplied. Burning means permanently removing tokens from circulation.</li>
+<li><strong>Bridge:</strong> A user burned a Ren-wrapped token on one supported chain, then RenVM minted its counterpart on another. The asset did not need to travel back to its original chain first.</li>
+</ul>
+
+<h2>How did minting and releasing work?</h2>
+<p>Mint and release were opposite directions through the same asset relationship. To bring BTC to Ethereum, the user deposited BTC to a RenVM gateway address, a chain-specific deposit address. After the deposit had enough confirmations, RenVM prepared the mint so renBTC could be created on Ethereum.</p>
+<p>To return, the user burned renBTC and provided a Bitcoin address. RenVM then released BTC to that address. The wrapped token was the on-chain claim used on the destination network; it was not BTC itself. This route could involve transactions and fees on both chains, plus RenVM’s processing.</p>
+<p>RenBridge 3.0 also extended mint-and-release flows to supported tokens and native assets. Ren described this host-to-host feature as a way to move generic tokens between chains. The same broad pattern applied: the source asset entered RenVM’s process, then a corresponding asset was minted or released on the destination.</p>
+
+<h2>Why use the direct bridge route?</h2>
+<p>Bridge skipped a trip through the asset’s original chain. Say a user held renBTC on Ethereum and wanted it on another supported smart-contract chain. RenVM could burn the Ethereum token and mint renBTC on the target chain directly. Ren said this could make transfers between smart-contract chains faster and cheaper because they did not need Bitcoin-chain transactions.</p>
+<p>The trade-off was availability: the direct route applied to Ren-wrapped assets and supported chains, not every possible token transfer. The mint or release route was needed when moving between a native asset and its Ren-wrapped form.</p>
+
+<h2>Are these routes available now?</h2>
+<p>These routes describe RenBridge 3.0’s design, not a guarantee that the service is currently operating. In November 2022, Ren announced plans to disable new minting through Ren 1.0 and shut that network down after 30 days. The key takeaway is the direction of travel: mint brings an asset into a wrapped form, release returns it to its origin, and bridge moves a Ren-wrapped asset between supported chains without that return trip.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/mesh-and-visa-link-wallet-balances-to-175-million-merchants/">Mesh and Visa link wallet balances to 175 million merchants</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/jpmorgan-brings-jpm-coin-to-ethereum-for-institutions/">JPMorgan brings JPM Coin to Ethereum for institutions</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/ledger-reviews-wallet-sales-after-93m-theft/">Ledger reviews wallet sales after $93M theft</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/babylon-proposes-native-bitcoin-collateral-for-aave-v4/">Babylon proposes native Bitcoin collateral for Aave V4</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent reporting. Not investment advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
