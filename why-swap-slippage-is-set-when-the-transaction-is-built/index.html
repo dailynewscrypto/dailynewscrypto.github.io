@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Set swap slippage at transaction build time | Crypto Daybook</title>
+<meta name="description" content="Setting slippage while building a swap turns a quote into an on-chain minimum output, balancing failed trades against poor fills as prices move before confirmation.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/why-swap-slippage-is-set-when-the-transaction-is-built/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why swap slippage is set when the transaction is built">
+<meta property="og:description" content="Setting slippage while building a swap turns a quote into an on-chain minimum output, balancing failed trades against poor fills as prices move before confirmation.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/why-swap-slippage-is-set-when-the-transaction-is-built/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/why-swap-slippage-is-set-when-the-transaction-is-built-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why swap slippage is set when the transaction is built"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why swap slippage is set when the transaction is built">
+<meta name="twitter:description" content="Setting slippage while building a swap turns a quote into an on-chain minimum output, balancing failed trades against poor fills as prices move before confirmation.">
+<meta property="article:published_time" content="2026-10-21T16:27:17+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/why-swap-slippage-is-set-when-the-transaction-is-built/#webpage",
+      "url": "https://dailynewscrypto.github.io/why-swap-slippage-is-set-when-the-transaction-is-built/",
+      "name": "Set swap slippage at transaction build time | Crypto Daybook",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/why-swap-slippage-is-set-when-the-transaction-is-built/#article",
+      "headline": "Why swap slippage is set when the transaction is built",
+      "isAccessibleForFree": true,
+      "description": "Setting slippage while building a swap turns a quote into an on-chain minimum output, balancing failed trades against poor fills as prices move before confirmation.",
+      "datePublished": "2026-10-21T16:27:17+00:00",
+      "dateModified": "2026-10-21T16:27:17+00:00",
+      "url": "https://dailynewscrypto.github.io/why-swap-slippage-is-set-when-the-transaction-is-built/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/why-swap-slippage-is-set-when-the-transaction-is-built/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 450,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/why-swap-slippage-is-set-when-the-transaction-is-built-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/why-swap-slippage-is-set-when-the-transaction-is-built-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/why-swap-slippage-is-set-when-the-transaction-is-built-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why swap slippage is set when the transaction is built",
+          "item": "https://dailynewscrypto.github.io/why-swap-slippage-is-set-when-the-transaction-is-built/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailynewscrypto.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">Why swap slippage is set when the transaction is built</h1>
+<p class="s606161b">Setting slippage while building a swap turns a quote into an on-chain minimum output, balancing failed trades against poor fills as prices move before confirmation.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-10-21T16:27:17+00:00">Oct 21, 2026 · 16:27 UTC</time><span>3 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/why-swap-slippage-is-set-when-the-transaction-is-built.jpg" alt="Why swap slippage is set when the transaction is built" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>Swap slippage is set when the transaction is built so the trade includes a minimum amount of tokens you agree to receive. That limit protects you if the price moves before the swap executes. A quote is only a snapshot; the transaction may wait while other trades change the price.</p>
+
+<p>For example, if a quote offers 1 token, a 1% slippage setting can let the transaction accept as little as 0.99. The router, a contract that carries out the swap, checks the final amount against that floor. If it falls short, the swap fails instead of completing at a worse price. For a fuller look at how route choices affect this calculation, see <a href="https://telegra.ph/ParaSwap-Which-Swap-Route-Fits-Your-Trade-10-21" rel="noopener">paraswap</a>.</p>
+
+<h2>What does the slippage setting change?</h2>
+
+<p>It changes the minimum output written into the transaction. The swap quote estimates what your trade could return using current market data. When the transaction is built, the app applies your tolerance to that estimate and sets the lowest return it will accept.</p>
+
+<p>That means the setting is a boundary, not a promise that you will receive the quoted amount. A looser boundary allows more price movement before execution, while a tighter one rejects more outcomes. It does not improve the quote or reduce the market’s price impact, which is the change in price caused by the trade itself.</p>
+
+<h2>Why choose slippage before signing?</h2>
+
+<p>The signed transaction needs a clear rule for what counts as an acceptable trade. Once it is sent to the network, you cannot adjust that rule in place. If market conditions change beyond the limit, the transaction reverts, meaning the swap is undone. You may still pay a network fee for the failed attempt.</p>
+
+<p>The trade-off is between execution and protection:</p>
+
+<ul>
+<li>A low tolerance can prevent a poor fill, but the swap may fail after a small price move.</li>
+<li>A high tolerance makes execution more likely, but allows the swap to return less than the quote suggests.</li>
+<li>A fresh quote and newly built transaction can reflect current conditions without widening the limit on an old quote.</li>
+</ul>
+
+<h2>How should you set a practical limit?</h2>
+
+<p>Start with the trade’s expected output and the minimum you would accept. Check that the minimum shown in the wallet matches that choice before signing. If the swap keeps failing, refresh the quote first; the route or market price may have changed. Increase tolerance only if you are willing to accept the lower output it permits.</p>
+
+<p>For most readers, the useful setting is the narrowest tolerance that still gives the trade a fair chance to execute. A transaction built from a stale quote can fail even with a reasonable limit, while an unnecessarily wide limit gives away control over the final amount.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/omnichain-explained-using-cross-chain-apps-with-your-own-wallet/">Omnichain, explained: using cross-chain apps with your own wallet</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/how-paraswap-swaps-tokens-from-quote-to-confirmation/">How ParaSwap swaps tokens, from quote to confirmation</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/jpmorgan-brings-jpm-coin-to-ethereum-for-institutional-clients/">JPMorgan brings JPM Coin to Ethereum for institutional clients</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/renbridge-explained-how-its-three-transfer-routes-worked/">RenBridge explained: how its three transfer routes worked</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent reporting. Not investment advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
