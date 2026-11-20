@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Threshold encryption vs TEE: encrypted mempool trade-offs</title>
+<meta name="description" content="Threshold encryption vs TEE for encrypted mempools: keyholders decrypt after ordering, while trusted hardware decrypts early enough for simulation and filtering.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/threshold-encryption-and-tee-mempool-privacy/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Threshold Encryption and TEE Mempool Privacy">
+<meta property="og:description" content="Threshold encryption vs TEE for encrypted mempools: keyholders decrypt after ordering, while trusted hardware decrypts early enough for simulation and filtering.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/threshold-encryption-and-tee-mempool-privacy/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/threshold-encryption-and-tee-mempool-privacy-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Threshold Encryption and TEE Mempool Privacy"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Threshold Encryption and TEE Mempool Privacy">
+<meta name="twitter:description" content="Threshold encryption vs TEE for encrypted mempools: keyholders decrypt after ordering, while trusted hardware decrypts early enough for simulation and filtering.">
+<meta property="article:published_time" content="2026-11-20T20:07:55+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/threshold-encryption-and-tee-mempool-privacy/#webpage",
+      "url": "https://dailynewscrypto.github.io/threshold-encryption-and-tee-mempool-privacy/",
+      "name": "Threshold encryption vs TEE: encrypted mempool trade-offs",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/threshold-encryption-and-tee-mempool-privacy/#article",
+      "headline": "Threshold Encryption and TEE Mempool Privacy",
+      "isAccessibleForFree": true,
+      "description": "Threshold encryption vs TEE for encrypted mempools: keyholders decrypt after ordering, while trusted hardware decrypts early enough for simulation and filtering.",
+      "datePublished": "2026-11-20T20:07:55+00:00",
+      "dateModified": "2026-11-20T20:07:55+00:00",
+      "url": "https://dailynewscrypto.github.io/threshold-encryption-and-tee-mempool-privacy/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/threshold-encryption-and-tee-mempool-privacy/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 422,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/threshold-encryption-and-tee-mempool-privacy-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/threshold-encryption-and-tee-mempool-privacy-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/threshold-encryption-and-tee-mempool-privacy-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Threshold Encryption and TEE Mempool Privacy",
+          "item": "https://dailynewscrypto.github.io/threshold-encryption-and-tee-mempool-privacy/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailynewscrypto.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">Threshold Encryption and TEE Mempool Privacy</h1>
+<p class="s606161b">Threshold encryption vs TEE for encrypted mempools: keyholders decrypt after ordering, while trusted hardware decrypts early enough for simulation and filtering.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-11-20T20:07:55+00:00">Nov 20, 2026 · 20:07 UTC</time><span>3 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/threshold-encryption-and-tee-mempool-privacy.jpg" alt="Threshold Encryption and TEE Mempool Privacy" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>Threshold encryption and a TEE hide pending transactions in different ways: keyholders decrypt after ordering, while trusted hardware decrypts inside an enclave so a builder can simulate first. The choice depends on when plaintext is exposed and which trust assumption fits the design.</p>
+<h2>Which trust model fits your mempool?</h2>
+<p><strong>Trust assumption:</strong> Threshold encryption relies on fewer than the required threshold of keyholders colluding. A TEE, or trusted execution environment, relies on hardware keeping data inside a protected enclave. The first distributes trust across keyholders; the second places it in hardware and its vendor.</p>
+<p><strong>When plaintext appears:</strong> Threshold-encrypted transactions are ordered before keyholders release the decryption key. Shutter Network uses a keyper committee: keypers release keys once a threshold agrees. A TEE decrypts transactions inside the enclave before ordering, so the builder can inspect them while building a block.</p>
+<p><strong>Pre-ordering simulation:</strong> Threshold encryption cannot simulate transactions before ordering because their contents are still hidden. That means failing or spam transactions may take block space. A TEE can simulate in plaintext and drop invalid transactions, helping it build more efficient blocks. BuilderNet runs block builders inside Intel TDX trusted execution environments.</p>
+<p>For someone choosing where to send a transaction, <a href="https://qiita.com/miltonrm/items/89be09f40571fb65ceb4" rel="noopener">flashbots protect</a> makes the submission route part of the decision alongside the mempool’s trust model. Flashbots is an MEV research and infrastructure organization, so its relevance here is how private transaction submission fits into the path to a builder.</p>
+<p><strong>Failure mode:</strong> Threshold encryption can fail if enough keypers collude and reveal keys early. A TEE can fail through hardware side-channels or vendor compromise. The risk is different: committee behavior in one design, hardware security in the other.</p>
+<p><strong>Liveness:</strong> Threshold decryption can stall when too few keypers respond to release a key. A TEE-based builder depends on one operator’s uptime. The first needs enough committee members available; the second needs its operator and enclave to stay online.</p>
+<p>Choose threshold encryption when hardware trust is unacceptable and the design can tolerate waiting for committee key release. Choose a TEE when block efficiency and filtering invalid transactions matter, and the hardware trust assumption fits. Flashbots’ BuilderNet example shows where TDX enters the second design.</p>
+<h2>Related</h2>
+<h3>What is Shutter Network?</h3>
+<p>Shutter Network uses threshold encryption for transaction privacy. Its keyper committee releases decryption keys once enough keypers agree, so ordering happens before plaintext is available.</p>
+<h3>Can Intel SGX enclaves be broken?</h3>
+<p>Intel SGX has the TEE trust model: it depends on hardware security. Side-channels or vendor compromise are failure modes to consider when deciding whether that trust is acceptable.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/weth-after-a-swap-your-eth-is-still-worth-1-1/">WETH After a Swap: Your ETH Is Still Worth 1:1</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/how-to-move-usdc-from-ethereum-to-monad-for-less/">How to Move USDC from Ethereum to Monad for Less</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/us-wins-authority-to-seize-or-restrain-1-2b-in-binance-funds/">US wins authority to seize or restrain $1.2B in Binance funds</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/injectives-veyra-upgrade-passes-ahead-of-nov-24-activation/">Injective’s Veyra upgrade passes ahead of Nov. 24 activation</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent reporting. Not investment advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
