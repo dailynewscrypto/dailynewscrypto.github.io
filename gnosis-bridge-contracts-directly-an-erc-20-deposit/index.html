@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en-US" data-mode="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to use Gnosis Bridge contracts directly: send ERC-20</title>
+<meta name="description" content="Learn how to use Gnosis Bridge contracts directly without the website: approve the Omnibridge mediator, call relayTokens, and track the ERC-20 on GnosisScan.">
+<link rel="canonical" href="https://dailynewscrypto.github.io/gnosis-bridge-contracts-directly-an-erc-20-deposit/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#e9f1ec">
+<meta name="author" content="Crypto Daybook Newsroom"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Crypto Daybook">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Gnosis Bridge contracts directly: an ERC-20 deposit">
+<meta property="og:description" content="Learn how to use Gnosis Bridge contracts directly without the website: approve the Omnibridge mediator, call relayTokens, and track the ERC-20 on GnosisScan.">
+<meta property="og:url" content="https://dailynewscrypto.github.io/gnosis-bridge-contracts-directly-an-erc-20-deposit/">
+<meta property="og:image" content="https://dailynewscrypto.github.io/assets/covers/gnosis-bridge-contracts-directly-an-erc-20-deposit-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Gnosis Bridge contracts directly: an ERC-20 deposit"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Gnosis Bridge contracts directly: an ERC-20 deposit">
+<meta name="twitter:description" content="Learn how to use Gnosis Bridge contracts directly without the website: approve the Omnibridge mediator, call relayTokens, and track the ERC-20 on GnosisScan.">
+<meta property="article:published_time" content="2026-11-24T08:09:36+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s6ae2880e21.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Crypto Daybook" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://dailynewscrypto.github.io/gnosis-bridge-contracts-directly-an-erc-20-deposit/#webpage",
+      "url": "https://dailynewscrypto.github.io/gnosis-bridge-contracts-directly-an-erc-20-deposit/",
+      "name": "How to use Gnosis Bridge contracts directly: send ERC-20",
+      "isPartOf": {
+        "@id": "https://dailynewscrypto.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://dailynewscrypto.github.io/gnosis-bridge-contracts-directly-an-erc-20-deposit/#article",
+      "headline": "Gnosis Bridge contracts directly: an ERC-20 deposit",
+      "isAccessibleForFree": true,
+      "description": "Learn how to use Gnosis Bridge contracts directly without the website: approve the Omnibridge mediator, call relayTokens, and track the ERC-20 on GnosisScan.",
+      "datePublished": "2026-11-24T08:09:36+00:00",
+      "dateModified": "2026-11-24T08:09:36+00:00",
+      "url": "https://dailynewscrypto.github.io/gnosis-bridge-contracts-directly-an-erc-20-deposit/",
+      "mainEntityOfPage": {
+        "@id": "https://dailynewscrypto.github.io/gnosis-bridge-contracts-directly-an-erc-20-deposit/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "wordCount": 486,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/gnosis-bridge-contracts-directly-an-erc-20-deposit-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/gnosis-bridge-contracts-directly-an-erc-20-deposit-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://dailynewscrypto.github.io/assets/covers/gnosis-bridge-contracts-directly-an-erc-20-deposit-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://dailynewscrypto.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Gnosis Bridge contracts directly: an ERC-20 deposit",
+          "item": "https://dailynewscrypto.github.io/gnosis-bridge-contracts-directly-an-erc-20-deposit/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://dailynewscrypto.github.io/#org",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://dailynewscrypto.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://dailynewscrypto.github.io/editorial-policy/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dailynewscrypto.github.io/#website",
+      "name": "Crypto Daybook",
+      "url": "https://dailynewscrypto.github.io/",
+      "publisher": {
+        "@id": "https://dailynewscrypto.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Crypto Daybook reports daily crypto news: market moves, Bitcoin and Ethereum updates, exchange and protocol developments, regulation and security incidents."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="sf56ed80" href="#main">Skip to the article</a>
+<header class="s39e0586">
+  <div class="s861432f">
+    <div class="s93ae033">
+      <a class="s6f4e1cc" href="/">Crypto Daybook</a>
+      <p class="sd4cb35d">Markets, chains and policy news</p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<article class="s861432f se3129bb">
+  <header class="s28ce286">
+    <h1 class="s7dcfdd5">Gnosis Bridge contracts directly: an ERC-20 deposit</h1>
+<p class="s606161b">Learn how to use Gnosis Bridge contracts directly without the website: approve the Omnibridge mediator, call relayTokens, and track the ERC-20 on GnosisScan.</p>    <p class="s11d14ed s8088978"><span>Crypto Daybook Newsroom</span><time datetime="2026-11-24T08:09:36+00:00">Nov 24, 2026 · 08:09 UTC</time><span>3 min read</span></p>
+  </header>
+  <figure class="s64c927d">
+    <img fetchpriority="high" class="s4c9fbe7" src="/assets/covers/gnosis-bridge-contracts-directly-an-erc-20-deposit.jpg" alt="Gnosis Bridge contracts directly: an ERC-20 deposit" width="1200" height="630">
+  </figure>
+  <div class="s046e6b4">
+    <p>Gnosis Bridge contracts let you send an ERC-20 from Ethereum to Gnosis Chain by approving the Omnibridge mediator, then calling <em>relayTokens</em> directly. The website builds these same contract calls, so <a href="https://gnosisbridge.org" rel="noopener">gnosisbridge.org</a> is a practical example of the same flow through its direct token transfer feature.</p>
+<p><strong>Have ready:</strong> The token in an Ethereum wallet connected through MetaMask, ETH for Ethereum gas, the token’s decimals, and the Ethereum mediator address from the official Gnosis docs. The docs list the Omnibridge Multi-Token Mediator Proxy at 0x88ad09518695c6c3712AC10a214bE5109a655671. Open that address on Etherscan and confirm you have the verified contract page before connecting your wallet.</p>
+<h2>How do you send an ERC-20 through Gnosis Bridge contracts?</h2>
+<ol>
+<li><strong>Approve the mediator.</strong> Open the token contract on Etherscan and use its write functions to call <em>approve</em>. Enter the mediator as spender and the amount in base units. Base units are the smallest token units, set by decimals: for a six-decimal token such as USDC, 1 token is 1,000,000 units. Confirm the transaction in MetaMask. The visible result is an approval allowing the mediator to transfer up to that amount; the token balance has not yet moved.</li>
+<li><strong>Call the proxy function.</strong> Open the mediator address on Etherscan and connect the wallet that holds the token. Omnibridge is an upgradeable proxy: it keeps the public address while delegating calls to an implementation contract. Use the <em>Write as Proxy</em> tab to access that implementation’s functions at the proxy address. Plain <em>Write Contract</em> can show only proxy admin functions, which is why <em>relayTokens</em> may be missing there. Call <em>relayTokens(token, receiver, amount)</em> with the Ethereum token address, the Gnosis Chain recipient, and the same base-unit amount. Confirm the transaction. The visible result is a submitted Ethereum transaction and a bridge message for validators to relay.</li>
+<li><strong>Wait for the relay and confirm arrival.</strong> Search for the transaction or recipient on GnosisScan. Before the call, the tokens were in the Ethereum wallet and no matching bridged balance was visible for the receiver on Gnosis Chain. After validators relay the message, the bridged token balance appears for that recipient on GnosisScan. The task is complete when the expected token and amount are visible there; the source balance and destination balance are on separate networks.</li>
+</ol>
+<p>A withdrawal from Gnosis Chain to Ethereum has a claim step. After validators sign the message, call <em>executeSignatures</em> on the Ethereum Arbitrary Message Bridge (AMB) with the validator-signed message and signatures. That claim completes the return transfer.</p>
+<h2>Related questions</h2>
+<h3>How to bridge DAI to xDAI through the xDai Bridge contract?</h3>
+<p>Omnibridge transfers DAI as a bridged token; it does not turn DAI into native xDAI. For native xDAI, use the xDai Bridge route described in the official Gnosis materials.</p>
+<h3>Can a Safe multisig call Gnosis Bridge contracts?</h3>
+<p>Yes. A Safe can submit the approval and <em>relayTokens</em> calls as transactions. The Safe must hold the ERC-20, because the mediator can transfer tokens only after that token-holding address approves it.</p>
+  </div>
+  <aside class="s14ccfe2">
+    <h2 class="sdc7f923">More crypto news</h2>
+    <ul class="s57b0b52">
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">01</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/what-is-blockchain-finality-and-why-do-bridges-wait/">What Is Blockchain Finality, and Why Do Bridges Wait?</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">02</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/evm-testnet-faucet-how-tokens-reach-your-wallet/">EVM Testnet Faucet: How Tokens Reach Your Wallet</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">03</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/should-i-speed-up-a-pending-bridge-deposit-or-wait/">Should I speed up a pending bridge deposit or wait?</a></h3>
+        </div>
+      </li>
+      <li class="sa662c5b s2d17777">
+<span class="s0021fe5">04</span>        <div class="sdc39f53">
+          <h3 class="s30b9fba"><a href="/chainflip-says-12-million-stolen-from-vaults-offers-10-bounty/">Chainflip says $12 million stolen from vaults, offers 10% bounty</a></h3>
+        </div>
+      </li>
+    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="sf38fa11">
+  <div class="s861432f">
+    <div class="s4ff49b9">
+      <p class="s8f52797">Crypto Daybook</p>
+      <nav class="sfffd617" aria-label="Site">
+        <ul>
+<li><a href="/">Home</a></li><li><a href="/archive/">All articles</a></li><li><a href="/about/">About us</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/editorial-policy/">Editorial policy</a></li>        </ul>
+      </nav>
+      <p class="saa7726b">Independent reporting. Not investment advice.</p>
+      <p class="s1174894">© 2026 Crypto Daybook</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
